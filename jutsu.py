@@ -11,10 +11,10 @@ class BlogSpider(scrapy.Spider):
         for href in response.css('div.smw-columnlist-container')[0].css('a::attr(href)').extract():
             extracted_data = scrapy.Request("https://naruto.fandom.com"+href,
                                             callback=self.parse_jutsu)
-            yield extracted_data
+            return extracted_data
 
         for next_page in response.css('a.mw-nextlink'):
-            yield response.follow(next_page, self.parse)
+            return response.follow(next_page, self.parse)
 
     def parse_jutsu(self, response):
         jutsu_name = response.css('h1.page-header__title::text').extract()[0]
