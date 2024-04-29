@@ -1,0 +1,306 @@
+﻿[Script Info]
+Title: English (US)
+Original Script: tvtm  [http://www.crunchyroll.com/user/tvtm]
+Original Translation: 
+Original Editing: 
+Original Timing: 
+Synch Point: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 640
+PlayResY: 360
+Timer: 0.0000
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,Strikeout,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,2,0020,0020,0020,0
+Style: OS,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,8,0001,0001,0015,0
+Style: Italics,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,-1,0,0,100,100,0,0,1,2,1,2,0020,0020,0022,0
+Style: On Top,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0022,0
+Style: DefaultLow,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,2,0020,0020,0010,0
+Style: Copy of OS,Arial,14,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,8,0001,0001,0015,0
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:10.25,0:00:11.06,Default,,0000,0000,0000,,C'mon!
+Dialogue: 0,0:00:17.43,0:00:20.00,Default,,0000,0000,0000,,Running like a fugitive,
+Dialogue: 0,0:00:21.00,0:00:23.27,Default,,0000,0000,0000,,Being chased by something
+Dialogue: 0,0:00:24.87,0:00:27.67,Default,,0000,0000,0000,,Inside my heart is pounding
+Dialogue: 0,0:00:28.77,0:00:31.34,Default,,0000,0000,0000,,My throat dry like it's withering
+Dialogue: 0,0:00:32.94,0:00:36.08,Default,,0000,0000,0000,,For no single one,
+Dialogue: 0,0:00:36.68,0:00:39.88,Default,,0000,0000,0000,,To none does belong,
+Dialogue: 0,0:00:41.35,0:00:45.72,Default,,0000,0000,0000,,This time is ours, right now...
+Dialogue: 0,0:00:48.23,0:00:50.09,Default,,0000,0000,0000,,Unraveling the pain,
+Dialogue: 0,0:00:50.19,0:00:51.90,Default,,0000,0000,0000,,Unraveling our hearts,
+Dialogue: 0,0:00:51.93,0:00:54.40,Default,,0000,0000,0000,,Unraveling shadows
+Dialogue: 0,0:00:55.90,0:00:57.77,Default,,0000,0000,0000,,Stifling our breath,
+Dialogue: 0,0:00:57.80,0:00:59.74,Default,,0000,0000,0000,,Reaching for beyond,
+Dialogue: 0,0:00:59.77,0:01:02.17,Default,,0000,0000,0000,,Tearing through the dark
+Dialogue: 0,0:01:04.01,0:01:10.75,Default,,0000,0000,0000,,In fighting and in love
+Dialogue: 0,0:01:11.68,0:01:14.25,Default,,0000,0000,0000,,To the distant light above,
+Dialogue: 0,0:01:14.75,0:01:17.89,Default,,0000,0000,0000,,Yes, we are on the way
+Dialogue: 0,0:01:22.69,0:01:23.90,Default,,0000,0000,0000,,I wanna rock...
+Dialogue: 0,0:01:26.53,0:01:27.97,Default,,0000,0000,0000,,Rockin' my heart
+Dialogue: 0,0:02:03.87,0:02:05.84,Default,,0000,0000,0000,,It looks like you've got some time\Nto kill there all by yourself.
+Dialogue: 0,0:02:07.87,0:02:10.88,Default,,0000,0000,0000,,What happened to the blond boy\Nand that stuck-up boy?
+Dialogue: 0,0:02:11.51,0:02:13.04,Default,,0000,0000,0000,,They're in the middle of\Nthe tree-climbing training.
+Dialogue: 0,0:02:13.64,0:02:14.88,Default,,0000,0000,0000,,You don't have to do that?
+Dialogue: 0,0:02:15.48,0:02:19.55,Default,,0000,0000,0000,,I'm exceptional, so Kakashi Sensei\Ntold me to guard you.
+Dialogue: 0,0:02:21.89,0:02:22.69,Default,,0000,0000,0000,,Really?
+Dialogue: 0,0:02:23.75,0:02:24.99,Default,,0000,0000,0000,,What?!
+Dialogue: 0,0:02:27.02,0:02:28.73,Default,,0000,0000,0000,,You got a minute, Tazuna?
+Dialogue: 0,0:02:29.89,0:02:31.43,Default,,0000,0000,0000,,Huh? What's up, Giichi?
+Dialogue: 0,0:02:32.03,0:02:33.76,Default,,0000,0000,0000,,Uh, actually…
+Dialogue: 0,0:02:34.23,0:02:36.20,Default,,0000,0000,0000,,I gave it a lot of thought.
+Dialogue: 0,0:02:36.73,0:02:40.27,Default,,0000,0000,0000,,Building this bridge…\Nwill you let me quit?
+Dialogue: 0,0:02:40.81,0:02:44.54,Default,,0000,0000,0000,,Why so suddenly? Not you too?!
+Dialogue: 0,0:02:45.54,0:02:48.68,Default,,0000,0000,0000,,Tazuna, I've had a bond\Nwith you from the old days.
+Dialogue: 0,0:02:49.01,0:02:51.38,Default,,0000,0000,0000,,I'd like to cooperate,\Nbut if we push it too far,
+Dialogue: 0,0:02:51.45,0:02:53.89,Default,,0000,0000,0000,,Gato will set his sights\Non us, too.
+Dialogue: 0,0:02:56.19,0:03:00.16,Default,,0000,0000,0000,,Also…if you get killed,\Neverything is lost!
+Dialogue: 0,0:03:02.46,0:03:06.13,Default,,0000,0000,0000,,Why don't you just\Nstop building the bridge?
+Dialogue: 0,0:03:11.07,0:03:12.74,Default,,0000,0000,0000,,Not a chance...
+Dialogue: 0,0:03:14.61,0:03:16.67,Default,,0000,0000,0000,,This is our bridge.
+Dialogue: 0,0:03:17.28,0:03:20.28,Default,,0000,0000,0000,,This is the bridge that\Neveryone in town has built
+Dialogue: 0,0:03:20.38,0:03:23.55,Default,,0000,0000,0000,,believing that it would generate\Ndistribution and transportation
+Dialogue: 0,0:03:23.58,0:03:25.88,Default,,0000,0000,0000,,for this poor Land of Waves\Nthat has few resources.
+Dialogue: 0,0:03:26.55,0:03:28.89,Default,,0000,0000,0000,,But if it goes so far as\Nto take our lives…
+Dialogue: 0,0:03:29.89,0:03:31.06,Default,,0000,0000,0000,,It's already afternoon…
+Dialogue: 0,0:03:31.56,0:03:32.92,Default,,0000,0000,0000,,Let's call it a day.
+Dialogue: 0,0:03:35.09,0:03:35.89,Default,,0000,0000,0000,,Tazuna!
+Dialogue: 0,0:03:37.90,0:03:40.90,Default,,0000,0000,0000,,Giichi…you don't have to\Ncome back tomorrow.
+Dialogue: 0,0:03:46.74,0:03:52.61,Default,,0000,0000,0000,,The Land Where a Hero Once Lived
+Dialogue: 0,0:03:53.88,0:03:55.88,Default,,0000,0000,0000,,Damn it!
+Dialogue: 0,0:03:58.52,0:04:00.52,Default,,0000,0000,0000,,What the heck is up with this?
+Dialogue: 0,0:04:17.40,0:04:19.34,Default,,0000,0000,0000,,I won't lose to you!
+Dialogue: 0,0:04:35.72,0:04:37.56,Default,,0000,0000,0000,,Say, where are we going?
+Dialogue: 0,0:04:37.86,0:04:41.16,Default,,0000,0000,0000,,I was asked to get some ingredients\Nfor dinner on the way home…
+Dialogue: 0,0:04:41.26,0:04:43.79,Default,,0000,0000,0000,,WILL DO ANY KIND OF WORK
+Dialogue: 0,0:04:44.03,0:04:44.96,Default,,0000,0000,0000,,Thief!
+Dialogue: 0,0:04:52.34,0:04:53.87,Default,,0000,0000,0000,,What's up with…this town…?
+Dialogue: 0,0:04:55.44,0:04:56.51,Default,,0000,0000,0000,,We're here…
+Dialogue: 0,0:04:57.54,0:04:58.54,Default,,0000,0000,0000,,Welcome…
+Dialogue: 0,0:05:09.49,0:05:11.06,Default,,0000,0000,0000,,There's hardly anything here…
+Dialogue: 0,0:05:17.83,0:05:20.06,Default,,0000,0000,0000,,You pervert!!
+Dialogue: 0,0:05:20.97,0:05:23.23,Default,,0000,0000,0000,,You're…wrong….
+Dialogue: 0,0:05:26.90,0:05:29.77,Default,,0000,0000,0000,,Man, I was really surprised earlier.
+Dialogue: 0,0:05:30.01,0:05:31.88,Default,,0000,0000,0000,,What's going on with this town?!
+Dialogue: 0,0:05:33.88,0:05:34.71,Default,,0000,0000,0000,,Again?
+Dialogue: 0,0:05:35.88,0:05:36.45,Default,,0000,0000,0000,,Hey, you…
+Dialogue: 0,0:05:40.48,0:05:40.89,Default,,0000,0000,0000,,What…?
+Dialogue: 0,0:05:42.52,0:05:43.49,Default,,0000,0000,0000,,Gimme some!
+Dialogue: 0,0:05:54.83,0:05:56.90,Default,,0000,0000,0000,,Oh… Here…
+Dialogue: 0,0:05:58.07,0:05:58.97,Default,,0000,0000,0000,,Yaaay!
+Dialogue: 0,0:06:00.87,0:06:01.87,Default,,0000,0000,0000,,Thank you.
+Dialogue: 0,0:06:07.51,0:06:09.48,Default,,0000,0000,0000,,This is how it's been ever\Nsince Gato showed up.
+Dialogue: 0,0:06:10.18,0:06:13.58,Default,,0000,0000,0000,,Here, all the adults\Nhave turned into cowards.
+Dialogue: 0,0:06:19.66,0:06:23.19,Default,,0000,0000,0000,,So that's why now\Nthat bridge is necessary…
+Dialogue: 0,0:06:24.06,0:06:25.63,Default,,0000,0000,0000,,It's a symbol of bravery…
+Dialogue: 0,0:06:26.13,0:06:29.27,Default,,0000,0000,0000,,in order to restore their spirit,\Nso they don't keep running away…
+Dialogue: 0,0:06:29.30,0:06:30.87,Default,,0000,0000,0000,,For the people of this land…
+Dialogue: 0,0:06:30.87,0:06:32.87,Default,,0000,0000,0000,,who have set their minds\Non remaining passive…
+Dialogue: 0,0:06:35.87,0:06:40.68,Default,,0000,0000,0000,,If we can just…\Ncomplete that bridge…
+Dialogue: 0,0:06:42.88,0:06:45.45,Default,,0000,0000,0000,,this town will return to\Nhow it once was…
+Dialogue: 0,0:06:46.65,0:06:48.52,Default,,0000,0000,0000,,and everyone will come back.
+Dialogue: 0,0:06:57.90,0:06:59.90,Default,,0000,0000,0000,,Sasuke…Naruto…
+Dialogue: 0,0:07:17.68,0:07:18.88,Default,,0000,0000,0000,,Damn it! Damn it!
+Dialogue: 0,0:07:19.15,0:07:21.65,Default,,0000,0000,0000,,Are you telling me that\NSasuke's still climbing?!
+Dialogue: 0,0:07:26.42,0:07:26.99,Default,,0000,0000,0000,,Darn it…
+Dialogue: 0,0:07:27.29,0:07:28.89,Default,,0000,0000,0000,,He's gradually catching up…
+Dialogue: 0,0:07:31.56,0:07:34.83,Default,,0000,0000,0000,,Darn it! No! No!
+Dialogue: 0,0:07:35.40,0:07:39.34,Default,,0000,0000,0000,,If I let myself get distracted by Sasuke,\Nmy concentration will be disturbed!
+Dialogue: 0,0:07:41.61,0:07:45.21,Default,,0000,0000,0000,,Hey Sakura,\Ncan you give me some tips?
+Dialogue: 0,0:07:45.84,0:07:46.14,Default,,0000,0000,0000,,Huh?
+Dialogue: 0,0:07:46.88,0:07:49.08,Default,,0000,0000,0000,,Without telling Sasuke, okay, okay?
+Dialogue: 0,0:07:50.88,0:07:51.68,Default,,0000,0000,0000,,Listen.
+Dialogue: 0,0:07:51.82,0:07:56.89,Default,,0000,0000,0000,,Chakra uses spiritual energy,\Nso you mustn't get too strained or frantic.
+Dialogue: 0,0:07:57.42,0:08:00.69,Default,,0000,0000,0000,,Relax and concentrate on the tree\Nso that you can constantly accumulate
+Dialogue: 0,0:08:00.72,0:08:02.89,Default,,0000,0000,0000,,a fixed amount of Chakra\Nin the bottom of your feet.
+Dialogue: 0,0:08:03.89,0:08:05.60,Default,,0000,0000,0000,,Concentrate! 					Concentrate!
+Dialogue: 0,0:08:05.90,0:08:08.40,Default,,0000,0000,0000,,Okay. I'm getting good vibes, I say!
+Dialogue: 0,0:08:08.90,0:08:10.47,Default,,0000,0000,0000,,Okay! This is it!
+Dialogue: 0,0:08:10.63,0:08:11.40,Default,,0000,0000,0000,,Hey…Naruto!
+Dialogue: 0,0:08:13.87,0:08:16.67,Default,,0000,0000,0000,,Jeez, what the heck's\Nwrong with you?!
+Dialogue: 0,0:08:16.87,0:08:18.88,Default,,0000,0000,0000,,Don't interfere while\NI'm trying to concentrate!
+Dialogue: 0,0:08:19.64,0:08:22.45,Default,,0000,0000,0000,,U…Uh…Well…
+Dialogue: 0,0:08:23.35,0:08:24.88,Default,,0000,0000,0000,,W-What is it?!
+Dialogue: 0,0:08:26.55,0:08:29.55,Default,,0000,0000,0000,,I'm not used to\Nhim speaking to me first…
+Dialogue: 0,0:08:32.42,0:08:36.43,Default,,0000,0000,0000,,Y-You asked Sakura to give\Nyou some tips before…
+Dialogue: 0,0:08:36.96,0:08:38.83,Default,,0000,0000,0000,,What did she say to you…?
+Dialogue: 0,0:08:43.40,0:08:44.87,Default,,0000,0000,0000,,I'm not telling!
+Dialogue: 0,0:09:00.82,0:09:01.85,Default,,0000,0000,0000,,Man…
+Dialogue: 0,0:09:01.89,0:09:03.35,Default,,0000,0000,0000,,This is really fun!
+Dialogue: 0,0:09:03.39,0:09:06.72,Default,,0000,0000,0000,,It's been a long time since we've had\Na meal with this many people!
+Dialogue: 0,0:09:13.30,0:09:14.20,Default,,0000,0000,0000,,Seconds please!
+Dialogue: 0,0:09:20.14,0:09:22.41,Default,,0000,0000,0000,,Stop eating if you're going to vomit!
+Dialogue: 0,0:09:22.87,0:09:24.34,Default,,0000,0000,0000,,No, I'll eat.
+Dialogue: 0,0:09:25.14,0:09:27.04,Default,,0000,0000,0000,,I have to eat even\Nif it means enduring.
+Dialogue: 0,0:09:27.51,0:09:29.95,Default,,0000,0000,0000,,I have to get strong\Nas quickly as possible, so...
+Dialogue: 0,0:09:30.88,0:09:31.88,Default,,0000,0000,0000,,Yes-yes!
+Dialogue: 0,0:09:32.45,0:09:34.89,Default,,0000,0000,0000,,But vomiting is different.
+Dialogue: 0,0:09:41.29,0:09:45.26,Default,,0000,0000,0000,,Excuse me, why is there\Na torn picture hanging here?
+Dialogue: 0,0:09:46.13,0:09:49.00,Default,,0000,0000,0000,,Inari was looking at this\Nall through dinner.
+Dialogue: 0,0:09:49.20,0:09:54.34,Default,,0000,0000,0000,,This torn part looks like someone who was\Nin the picture was deliberately torn off.
+Dialogue: 0,0:09:59.64,0:10:00.58,Default,,0000,0000,0000,,It's my husband…
+Dialogue: 0,0:10:02.88,0:10:05.88,Default,,0000,0000,0000,,He's a man who was\Nonce called a hero of this town…
+Dialogue: 0,0:10:09.65,0:10:11.19,Default,,0000,0000,0000,,Inari! Where are you going…?
+Dialogue: 0,0:10:18.63,0:10:19.40,Default,,0000,0000,0000,,Dad!
+Dialogue: 0,0:10:19.73,0:10:22.60,Default,,0000,0000,0000,,I'm always telling you not to\Ntalk about that person in front of Inari…!
+Dialogue: 0,0:10:33.88,0:10:36.58,Default,,0000,0000,0000,,What're you saying happened with Inari?
+Dialogue: 0,0:10:37.58,0:10:40.35,Default,,0000,0000,0000,,It appears there's\Nsome kind of good reason.
+Dialogue: 0,0:10:41.99,0:10:45.49,Default,,0000,0000,0000,,Inari had a father\Nnot related by blood…
+Dialogue: 0,0:10:46.22,0:10:49.89,Default,,0000,0000,0000,,It was like they were a real father\Nand son who got along really well…
+Dialogue: 0,0:10:52.80,0:10:56.40,Default,,0000,0000,0000,,Back then, Inari was a child\Nwho laughed all the time…
+Dialogue: 0,0:10:58.47,0:10:59.27,Default,,0000,0000,0000,,However…
+Dialogue: 0,0:11:06.14,0:11:07.21,Default,,0000,0000,0000,,However…
+Dialogue: 0,0:11:08.78,0:11:14.42,Default,,0000,0000,0000,,Inari has changed…\Never since that incident with his father.
+Dialogue: 0,0:11:20.39,0:11:22.89,Default,,0000,0000,0000,,The word bravery was eternally taken
+Dialogue: 0,0:11:22.89,0:11:27.33,Default,,0000,0000,0000,,from the people of this island\Nand from Inari…
+Dialogue: 0,0:11:27.90,0:11:30.77,Default,,0000,0000,0000,,With that day,\Nthat incident, as the trigger.
+Dialogue: 0,0:11:31.87,0:11:34.87,Default,,0000,0000,0000,,That incident?\NWhat happened to Inari?
+Dialogue: 0,0:11:36.04,0:11:38.94,Default,,0000,0000,0000,,To explain the incident,\NI must first…
+Dialogue: 0,0:11:39.84,0:11:44.15,Default,,0000,0000,0000,,tell you about the man\Nwho was called the hero of this land.
+Dialogue: 0,0:11:44.82,0:11:45.75,Default,,0000,0000,0000,,Hero…?
+Dialogue: 0,0:11:46.65,0:11:48.59,Default,,0000,0000,0000,,It was around three years ago…
+Dialogue: 0,0:11:49.15,0:11:51.76,Default,,0000,0000,0000,,when Inari met the man…
+Dialogue: 0,0:11:54.59,0:11:55.39,Default,,0000,0000,0000,,Potchi!!
+Dialogue: 0,0:11:55.56,0:11:56.39,Default,,0000,0000,0000,,Potchi!!
+Dialogue: 0,0:11:58.90,0:11:59.90,Default,,0000,0000,0000,,Wrong!
+Dialogue: 0,0:12:00.13,0:12:02.43,Default,,0000,0000,0000,,His name's Shooting Star…
+Dialogue: 0,0:12:02.90,0:12:04.44,Default,,0000,0000,0000,,As of today, he's my dog!
+Dialogue: 0,0:12:04.74,0:12:07.91,Default,,0000,0000,0000,,He's not Shooting Star!\NHe's my Potchi! Give him back!
+Dialogue: 0,0:12:08.41,0:12:09.87,Default,,0000,0000,0000,,Potchi's my friend!
+Dialogue: 0,0:12:10.14,0:12:12.44,Default,,0000,0000,0000,,Who's going to give him\Nto the likes of you?!
+Dialogue: 0,0:12:14.38,0:12:15.31,Default,,0000,0000,0000,,Shut up!
+Dialogue: 0,0:12:22.15,0:12:22.89,Default,,0000,0000,0000,,Potchi!!
+Dialogue: 0,0:12:26.89,0:12:29.06,Default,,0000,0000,0000,,That's cuz you wouldn't\Nhand him over quietly…
+Dialogue: 0,0:12:29.66,0:12:31.76,Default,,0000,0000,0000,,Now I couldn't care less\Nabout that dog!
+Dialogue: 0,0:12:32.63,0:12:33.93,Default,,0000,0000,0000,,Hey, let him go!
+Dialogue: 0,0:12:35.70,0:12:38.87,Default,,0000,0000,0000,,What have you done?!\NAre you trying to kill Potchi?!
+Dialogue: 0,0:12:39.44,0:12:42.44,Default,,0000,0000,0000,,Heh! He's your special mutt, right?
+Dialogue: 0,0:12:42.77,0:12:44.51,Default,,0000,0000,0000,,Then save him, quick.
+Dialogue: 0,0:12:46.71,0:12:48.05,Default,,0000,0000,0000,,What's the matter…?
+Dialogue: 0,0:12:48.81,0:12:50.35,Default,,0000,0000,0000,,Is it okay with you if he dies?!
+Dialogue: 0,0:12:57.65,0:12:59.26,Default,,0000,0000,0000,,Of course I'm not okay\Nwith him dying!
+Dialogue: 0,0:12:59.56,0:13:02.19,Default,,0000,0000,0000,,He's my only friend!
+Dialogue: 0,0:13:03.09,0:13:04.90,Default,,0000,0000,0000,,– But...\N– Look. He can't even dog paddle
+Dialogue: 0,0:13:04.93,0:13:07.26,Default,,0000,0000,0000,,– even though he's a dog!\N– But…
+Dialogue: 0,0:13:07.73,0:13:11.50,Default,,0000,0000,0000,,I'm sorry, Potchi…\NI can't swim…
+Dialogue: 0,0:13:12.50,0:13:15.67,Default,,0000,0000,0000,,Hey! If you're his owner,\Ndive in after him!
+Dialogue: 0,0:13:22.85,0:13:26.72,Default,,0000,0000,0000,,This is bad, Akane.\NWhat if he can't swim…?
+Dialogue: 0,0:13:28.89,0:13:29.89,Default,,0000,0000,0000,,S-Save me…!
+Dialogue: 0,0:13:30.39,0:13:31.02,Default,,0000,0000,0000,,Leave him be.
+Dialogue: 0,0:13:31.89,0:13:32.76,Default,,0000,0000,0000,,B-But…
+Dialogue: 0,0:13:34.36,0:13:37.46,Default,,0000,0000,0000,,Then why don't you go\Nsave him if you like?
+Dialogue: 0,0:13:39.90,0:13:42.63,Default,,0000,0000,0000,,I-I don't want to die…\NSomebody save me…!
+Dialogue: 0,0:13:45.84,0:13:46.77,Default,,0000,0000,0000,,P-Potchi!
+Dialogue: 0,0:13:48.17,0:13:49.27,Default,,0000,0000,0000,,Potchi!
+Dialogue: 0,0:13:49.87,0:13:51.41,Default,,0000,0000,0000,,I'm gonna digress, but…
+Dialogue: 0,0:13:52.11,0:13:54.88,Default,,0000,0000,0000,,Potchi learned\Nhow to dog paddle then.
+Dialogue: 0,0:13:58.45,0:13:59.88,Default,,0000,0000,0000,,Potchi!
+Dialogue: 0,0:14:07.02,0:14:09.03,Default,,0000,0000,0000,,Shooting Star escaped. Get him!
+Dialogue: 0,0:14:20.77,0:14:24.81,Default,,0000,0000,0000,,Ohhh…I can't breathe…\NThis…is it…
+Dialogue: 0,0:14:31.88,0:14:33.58,Default,,0000,0000,0000,,Are you awake, boy?
+Dialogue: 0,0:14:38.89,0:14:42.06,Default,,0000,0000,0000,,I gave those kids\Na good scolding.
+Dialogue: 0,0:14:42.89,0:14:43.89,Default,,0000,0000,0000,,Here, eat!
+Dialogue: 0,0:14:45.56,0:14:47.76,Default,,0000,0000,0000,,Is this God? Oh…
+Dialogue: 0,0:14:48.13,0:14:50.30,Default,,0000,0000,0000,,Did you…save me?
+Dialogue: 0,0:14:51.07,0:14:54.14,Default,,0000,0000,0000,,Just eat! Start with that.
+Dialogue: 0,0:14:56.31,0:14:58.88,Default,,0000,0000,0000,,I see. You were betrayed\Nby your dog, too…
+Dialogue: 0,0:14:59.78,0:15:03.65,Default,,0000,0000,0000,,In my country, dogs are creatures\Nthat have a keen sense of loyalty…
+Dialogue: 0,0:15:04.15,0:15:07.08,Default,,0000,0000,0000,,Well, you betrayed\Nyour dog's trust first,
+Dialogue: 0,0:15:07.15,0:15:08.75,Default,,0000,0000,0000,,so there's nothing\Nyou can do about that.
+Dialogue: 0,0:15:10.39,0:15:13.02,Default,,0000,0000,0000,,I was scared and couldn't move.
+Dialogue: 0,0:15:15.86,0:15:17.46,Default,,0000,0000,0000,,I wanted to save him…
+Dialogue: 0,0:15:17.90,0:15:20.63,Default,,0000,0000,0000,,But…I have no guts, so…
+Dialogue: 0,0:15:20.90,0:15:21.93,Default,,0000,0000,0000,,That's right.
+Dialogue: 0,0:15:23.23,0:15:26.34,Default,,0000,0000,0000,,Of course a kid your age\Nwould be scared.
+Dialogue: 0,0:15:27.94,0:15:29.11,Default,,0000,0000,0000,,But you know…boy.
+Dialogue: 0,0:15:29.87,0:15:31.64,Default,,0000,0000,0000,,Just remember this.
+Dialogue: 0,0:15:32.01,0:15:32.61,Default,,0000,0000,0000,,Huh?
+Dialogue: 0,0:15:33.64,0:15:36.45,Default,,0000,0000,0000,,If you're a man choose\Na lifestyle you won't regret…
+Dialogue: 0,0:15:38.58,0:15:41.25,Default,,0000,0000,0000,,For things I truly\Nhold dear to myself,
+Dialogue: 0,0:15:41.52,0:15:44.86,Default,,0000,0000,0000,,I'll protect them until the very end\Nwith both these arms.
+Dialogue: 0,0:15:44.89,0:15:47.93,Default,,0000,0000,0000,,Even if it's tough, or sad,\NI'll stick it out...
+Dialogue: 0,0:15:47.96,0:15:50.79,Default,,0000,0000,0000,,even if it looks like\NI might lose my life!
+Dialogue: 0,0:15:55.13,0:15:56.90,Default,,0000,0000,0000,,His name was Kaiza and
+Dialogue: 0,0:15:57.07,0:16:01.67,Default,,0000,0000,0000,,he was a fisherman who'd come to this land\Nfrom another country in search of his dreams.
+Dialogue: 0,0:16:02.54,0:16:05.78,Default,,0000,0000,0000,,After that, Inari really took to Kaiza.
+Dialogue: 0,0:16:06.01,0:16:09.21,Default,,0000,0000,0000,,It may have been because Inari\Nhad lost his real father
+Dialogue: 0,0:16:09.28,0:16:11.21,Default,,0000,0000,0000,,when he was too young\Nto  remember anything.
+Dialogue: 0,0:16:11.58,0:16:14.69,Default,,0000,0000,0000,,But he was very attached to Kaiza.
+Dialogue: 0,0:16:14.72,0:16:16.02,Default,,0000,0000,0000,,They were like father and son…
+Dialogue: 0,0:16:17.89,0:16:20.86,Default,,0000,0000,0000,,It didn't take long\Nfor Kaiza to become…
+Dialogue: 0,0:16:21.16,0:16:23.16,Default,,0000,0000,0000,,a member of the family.
+Dialogue: 0,0:16:25.23,0:16:29.10,Default,,0000,0000,0000,,And he was a man\Nthis town needed.
+Dialogue: 0,0:16:29.93,0:16:31.87,Default,,0000,0000,0000,,We…we've got trouble, Kaiza!
+Dialogue: 0,0:16:32.00,0:16:34.30,Default,,0000,0000,0000,,The river dam has broken\Nfrom this rain!
+Dialogue: 0,0:16:34.64,0:16:36.91,Default,,0000,0000,0000,,At this rate,\NDistrict D will be consumed!
+Dialogue: 0,0:16:37.27,0:16:37.91,Default,,0000,0000,0000,,What?!
+Dialogue: 0,0:16:38.21,0:16:38.88,Default,,0000,0000,0000,,Dad!
+Dialogue: 0,0:16:39.04,0:16:40.98,Default,,0000,0000,0000,,Inari, go out back and\Nget some rope!
+Dialogue: 0,0:16:41.08,0:16:41.68,Default,,0000,0000,0000,,Okay!
+Dialogue: 0,0:16:42.58,0:16:43.15,Default,,0000,0000,0000,,Its no good!
+Dialogue: 0,0:16:43.45,0:16:45.25,Default,,0000,0000,0000,,The only thing we can do is\Nto attach a rope and pull…
+Dialogue: 0,0:16:45.82,0:16:48.32,Default,,0000,0000,0000,,Don't talk nonsense!\NHow are we going to attach a rope?!
+Dialogue: 0,0:16:48.65,0:16:51.42,Default,,0000,0000,0000,,We'd die if we were to go\Ninto such a furious current!
+Dialogue: 0,0:16:51.72,0:16:54.46,Default,,0000,0000,0000,,But if we drag our feet,\NDistrict D will be annihilated!
+Dialogue: 0,0:16:54.89,0:16:55.89,Default,,0000,0000,0000,,What should we do…?
+Dialogue: 0,0:16:56.39,0:16:57.03,Default,,0000,0000,0000,,I'll do it.
+Dialogue: 0,0:16:59.90,0:17:00.56,Default,,0000,0000,0000,,Kaiza!
+Dialogue: 0,0:17:00.96,0:17:02.23,Default,,0000,0000,0000,,Don't be foolish!
+Dialogue: 0,0:17:02.57,0:17:04.23,Default,,0000,0000,0000,,Even you wouldn't be able to!
+Dialogue: 0,0:17:04.94,0:17:05.80,Default,,0000,0000,0000,,Dad!
+Dialogue: 0,0:17:06.30,0:17:07.60,Default,,0000,0000,0000,,Don't worry…
+Dialogue: 0,0:17:08.34,0:17:09.84,Default,,0000,0000,0000,,Your dad's unmatched.
+Dialogue: 0,0:17:10.31,0:17:14.01,Default,,0000,0000,0000,,Your dad loves the town\Nyou're from, so....
+Dialogue: 0,0:17:18.15,0:17:20.88,Default,,0000,0000,0000,,For things I truly hold dear to myself…
+Dialogue: 0,0:17:29.59,0:17:31.76,Default,,0000,0000,0000,,Even if I lose my life…
+Dialogue: 0,0:17:34.90,0:17:37.87,Default,,0000,0000,0000,,I'll protect them to the end…\Nwith both these arms!
+Dialogue: 0,0:17:39.87,0:17:42.31,Default,,0000,0000,0000,,Dad, hang in there!
+Dialogue: 0,0:17:49.88,0:17:52.88,Default,,0000,0000,0000,,He did it!\NThe rope... the rope's attached!
+Dialogue: 0,0:17:52.88,0:17:54.89,Default,,0000,0000,0000,,Okay, everybody pull!
+Dialogue: 0,0:17:54.89,0:17:55.89,Default,,0000,0000,0000,,Yeah!
+Dialogue: 0,0:17:56.89,0:18:01.22,Default,,0000,0000,0000,,From then on…the people of this land\Ncalled Kaiza a hero.
+Dialogue: 0,0:18:01.26,0:18:05.70,Default,,0000,0000,0000,,And he became a father\Nthat Inari could be proud of.
+Dialogue: 0,0:18:07.06,0:18:10.77,Default,,0000,0000,0000,,It was around that time when Gato\Nset his sights on this land.
+Dialogue: 0,0:18:10.90,0:18:13.67,Default,,0000,0000,0000,,And then, one night…
+Dialogue: 0,0:18:27.85,0:18:28.89,Default,,0000,0000,0000,,I heard…
+Dialogue: 0,0:18:29.19,0:18:32.16,Default,,0000,0000,0000,,That you're going to protect\Nthis town with those arms…
+Dialogue: 0,0:18:39.80,0:18:41.90,Default,,0000,0000,0000,,I dare you to!
+Dialogue: 0,0:19:12.70,0:19:13.70,Default,,0000,0000,0000,,Listen up!
+Dialogue: 0,0:19:13.90,0:19:18.34,Default,,0000,0000,0000,,This man resisted through force,\Nthe policies of the Gato corporation
+Dialogue: 0,0:19:18.40,0:19:20.60,Default,,0000,0000,0000,,and disturbed the order\Nof this nation.
+Dialogue: 0,0:19:21.67,0:19:23.87,Default,,0000,0000,0000,,Therefore, he will now be executed!
+Dialogue: 0,0:19:30.38,0:19:34.75,Default,,0000,0000,0000,,I just hope that such trivial matters\Nwill never occur again.
+Dialogue: 0,0:19:34.99,0:19:35.82,Default,,0000,0000,0000,,Dad!
+Dialogue: 0,0:19:36.42,0:19:37.72,Default,,0000,0000,0000,,Stop, Inari…
+Dialogue: 0,0:19:45.90,0:19:46.56,Default,,0000,0000,0000,,Do it…
+Dialogue: 0,0:19:50.90,0:19:51.60,Default,,0000,0000,0000,,Dad…
+Dialogue: 0,0:19:57.87,0:19:59.41,Default,,0000,0000,0000,,Dad!
+Dialogue: 0,0:20:07.88,0:20:09.32,Default,,0000,0000,0000,,Didn't you tell me…?
+Dialogue: 0,0:20:13.22,0:20:16.29,Default,,0000,0000,0000,,That you'd…protect…
+Dialogue: 0,0:20:20.90,0:20:24.87,Default,,0000,0000,0000,,me and the people of this land…\Nwith both your arms…?
+Dialogue: 0,0:20:26.24,0:20:28.54,Default,,0000,0000,0000,,Dad, you liar…
+Dialogue: 0,0:20:32.71,0:20:35.88,Default,,0000,0000,0000,,Ever since then,\Nlnari has changed…
+Dialogue: 0,0:20:36.78,0:20:39.15,Default,,0000,0000,0000,,as well as Tsunami…\Nand the townspeople…
+Dialogue: 0,0:20:43.35,0:20:47.86,Default,,0000,0000,0000,,Hero, that's just stupid.\NThere's no such thing!
+Dialogue: 0,0:21:05.84,0:21:07.61,Default,,0000,0000,0000,,What're you doing, Naruto…?
+Dialogue: 0,0:21:07.88,0:21:11.45,Default,,0000,0000,0000,,You've had enough training for today.\NYou've built up too much Chakra.
+Dialogue: 0,0:21:11.88,0:21:13.52,Default,,0000,0000,0000,,You'll die if you move\Nany more than that.
+Dialogue: 0,0:21:14.88,0:21:16.15,Default,,0000,0000,0000,,I'll prove it.
+Dialogue: 0,0:21:17.89,0:21:18.89,Default,,0000,0000,0000,,Prove what?
+Dialogue: 0,0:21:21.59,0:21:22.66,Default,,0000,0000,0000,,I'll prove that…
+Dialogue: 0,0:21:23.09,0:21:25.90,Default,,0000,0000,0000,,there are heroes…
+Dialogue: 0,0:21:29.43,0:21:30.80,Default,,0000,0000,0000,,in this world!
+Dialogue: 0,0:23:07.93,0:23:10.13,Default,,0000,0000,0000,,Huh? What do you want, lady?
+Dialogue: 0,0:23:10.50,0:23:11.94,Default,,0000,0000,0000,,As for me, I'm training right now.
+Dialogue: 0,0:23:11.97,0:23:14.14,Default,,0000,0000,0000,,Cuz we don't know when\NZabuza will strike next..
+Dialogue: 0,0:23:14.87,0:23:17.97,Default,,0000,0000,0000,,Getting strong for someone special\Nis something I understand very well.
+Dialogue: 0,0:23:18.21,0:23:20.88,Default,,0000,0000,0000,,So I'm going to get\Nstronger and stronger.
+Dialogue: 0,0:23:21.48,0:23:24.65,Default,,0000,0000,0000,,I'll show Inari that there are heroes\Nin this world.
+Dialogue: 0,0:23:25.88,0:23:29.19,Default,,0000,0000,0000,,Next time:\N "Battle on the Bridge! Zabuza Returns!"
+Dialogue: 0,0:23:29.22,0:23:31.89,Default,,0000,0000,0000,,As for me, I'm going to\Nkick butt once again!

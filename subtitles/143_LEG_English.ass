@@ -1,0 +1,368 @@
+﻿[Script Info]
+Title: English (US)
+Original Script: tvtm  [http://www.crunchyroll.com/user/tvtm]
+Original Translation: 
+Original Editing: 
+Original Timing: 
+Synch Point: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 640
+PlayResY: 360
+Timer: 0.0000
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,Strikeout,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,2,0020,0020,0020,0
+Style: OS,Arial,18,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,8,0001,0001,0015,0
+Style: Italics,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,-1,0,0,100,100,0,0,1,2,1,2,0020,0020,0022,0
+Style: On Top,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,8,0020,0020,0022,0
+Style: DefaultLow,Arial,20,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,2,0020,0020,0010,0
+Style: Copy of OS,Arial,14,&H00FFFFFF,&H0000FFFF,&H00000000,&H7F404040,-1,0,0,0,100,100,0,0,1,2,1,8,0001,0001,0015,0
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:12.41,0:00:16.70,Default,,0000,0000,0000,,Hey boys, listen up!
+Dialogue: 0,0:00:16.75,0:00:21.45,Default,,0000,0000,0000,,Humans aren’t such a big deal
+Dialogue: 0,0:00:22.04,0:00:26.25,Default,,0000,0000,0000,,Who needs tomorrow anyway,
+Dialogue: 0,0:00:26.29,0:00:29.49,Default,,0000,0000,0000,,so don’t hide your fists
+Dialogue: 0,0:00:31.45,0:00:33.58,Default,,0000,0000,0000,,You’re not old enough
+Dialogue: 0,0:00:33.62,0:00:40.04,Default,,0000,0000,0000,,to sell your dreams away to uncertainty
+Dialogue: 0,0:00:40.91,0:00:45.49,Default,,0000,0000,0000,,Hey boys, you’re the only ones
+Dialogue: 0,0:00:45.49,0:00:49.00,Default,,0000,0000,0000,,who can pull the trigger in your heart
+Dialogue: 0,0:00:50.49,0:00:52.45,Default,,0000,0000,0000,,All the kids said
+Dialogue: 0,0:00:52.49,0:00:55.45,Default,,0000,0000,0000,,We’re living in this senseless, ridiculous,
+Dialogue: 0,0:00:55.49,0:00:59.66,Default,,0000,0000,0000,,awesome world right at this moment,
+Dialogue: 0,0:00:59.87,0:01:02.33,Default,,0000,0000,0000,,All the kids said
+Dialogue: 0,0:01:02.37,0:01:08.16,Default,,0000,0000,0000,,Don’t forget every truth or lie
+Dialogue: 0,0:01:09.49,0:01:11.79,Default,,0000,0000,0000,,All the kids said
+Dialogue: 0,0:01:11.79,0:01:14.25,Default,,0000,0000,0000,,We’re way too young to die
+Dialogue: 0,0:01:14.29,0:01:19.08,Default,,0000,0000,0000,,In this empty town lined with empty faces
+Dialogue: 0,0:01:19.12,0:01:21.41,Default,,0000,0000,0000,,All the kids took off
+Dialogue: 0,0:01:21.45,0:01:23.83,Default,,0000,0000,0000,,into this windless night
+Dialogue: 0,0:01:23.87,0:01:27.37,Default,,0000,0000,0000,,Because they want to change something
+Dialogue: 0,0:01:43.20,0:01:46.87,Default,,0000,0000,0000,,Ton Ton, I'm Counting on You!
+Dialogue: 0,0:01:52.75,0:01:55.25,Default,,0000,0000,0000,,Kurenai Sensei! Asuma Sensei!
+Dialogue: 0,0:01:55.95,0:01:57.75,Default,,0000,0000,0000,,W-What happened?!
+Dialogue: 0,0:02:01.20,0:02:02.49,Default,,0000,0000,0000,,N-Naruto…
+Dialogue: 0,0:02:12.08,0:02:12.75,Default,,0000,0000,0000,,There they are!
+Dialogue: 0,0:02:13.49,0:02:14.41,Default,,0000,0000,0000,,Hurry!
+Dialogue: 0,0:02:16.37,0:02:17.29,Default,,0000,0000,0000,,The Medical Corps…?
+Dialogue: 0,0:02:21.91,0:02:23.45,Default,,0000,0000,0000,,There’s no time to lose!
+Dialogue: 0,0:02:24.00,0:02:25.41,Default,,0000,0000,0000,,As soon as they have received\Nemergency treatment…
+Dialogue: 0,0:02:25.45,0:02:26.49,Default,,0000,0000,0000,,transport them immediately!
+Dialogue: 0,0:02:28.91,0:02:31.49,Default,,0000,0000,0000,,What in the world…happened?
+Dialogue: 0,0:02:35.49,0:02:37.49,Default,,0000,0000,0000,,Don’t concern yourself\Nwith the other prisoners!
+Dialogue: 0,0:02:38.37,0:02:41.41,Default,,0000,0000,0000,,We need to focus solely\Non Mizuki! Got it?!
+Dialogue: 0,0:02:41.75,0:02:42.66,Default,,0000,0000,0000,,– Roger! 					– Roger!
+Dialogue: 0,0:02:48.08,0:02:49.49,Default,,0000,0000,0000,,Ton Ton, we’re close, right?!
+Dialogue: 0,0:02:55.49,0:02:56.08,Default,,0000,0000,0000,,There they are!
+Dialogue: 0,0:02:56.75,0:02:58.83,Default,,0000,0000,0000,,– Thank you for the meal!\N– Thank you for the meal!
+Dialogue: 0,0:02:58.91,0:03:00.33,Default,,0000,0000,0000,,It can’t be…!
+Dialogue: 0,0:03:03.49,0:03:04.49,Default,,0000,0000,0000,,Fuujin…Raijin!
+Dialogue: 0,0:03:05.75,0:03:07.62,Default,,0000,0000,0000,,These two are Fuujin and Raijin?
+Dialogue: 0,0:03:08.04,0:03:09.50,Default,,0000,0000,0000,,They’ll do us in\Nif we lower our guard!
+Dialogue: 0,0:03:10.16,0:03:11.16,Default,,0000,0000,0000,,Elder Brother…
+Dialogue: 0,0:03:11.20,0:03:13.49,Default,,0000,0000,0000,,which do you prefer,\Npork cutlet or ginger pork?
+Dialogue: 0,0:03:14.08,0:03:15.49,Default,,0000,0000,0000,,I want both.
+Dialogue: 0,0:03:17.66,0:03:19.79,Default,,0000,0000,0000,,Hey you… Where is Mizuki?!
+Dialogue: 0,0:03:20.49,0:03:23.00,Default,,0000,0000,0000,,Seems like I’m popular…
+Dialogue: 0,0:03:24.25,0:03:26.49,Default,,0000,0000,0000,,When did he sneak in?\NThis isn’t good!
+Dialogue: 0,0:03:41.87,0:03:46.16,Default,,0000,0000,0000,,Damn… Just when I thought things\Nhad quieted down, this happens.
+Dialogue: 0,0:03:46.58,0:03:48.79,Default,,0000,0000,0000,,That guy is a tough one to handle.
+Dialogue: 0,0:03:49.70,0:03:50.70,Default,,0000,0000,0000,,Orochimaru…
+Dialogue: 0,0:03:56.70,0:03:59.41,Default,,0000,0000,0000,,I wish to report that\Nwe have managed to take
+Dialogue: 0,0:03:59.45,0:04:01.12,Default,,0000,0000,0000,,both Kurenai and Asuma\Nunder our protection…
+Dialogue: 0,0:04:02.49,0:04:04.33,Default,,0000,0000,0000,,I see… Good work.
+Dialogue: 0,0:04:04.83,0:04:07.12,Default,,0000,0000,0000,,Hidden Leaf Hospital
+Dialogue: 0,0:04:10.79,0:04:13.04,Default,,0000,0000,0000,,Looks like I underestimated them a little.\NMy apologies.
+Dialogue: 0,0:04:13.37,0:04:16.50,Default,,0000,0000,0000,,No…This is really embarrassing.\NI let my guard down.
+Dialogue: 0,0:04:17.49,0:04:20.49,Default,,0000,0000,0000,,I didn’t think that all the inmates\Nwould break out of prison.
+Dialogue: 0,0:04:21.41,0:04:23.95,Default,,0000,0000,0000,,And moreover, the guards\Nwere taken as hostages.
+Dialogue: 0,0:04:25.83,0:04:27.45,Default,,0000,0000,0000,,What happened afterwards?
+Dialogue: 0,0:04:31.49,0:04:32.87,Default,,0000,0000,0000,,I believe that this last prison\Nbreak incident
+Dialogue: 0,0:04:32.91,0:04:36.29,Default,,0000,0000,0000,,was not an unexpected occurrence…
+Dialogue: 0,0:04:37.54,0:04:40.49,Default,,0000,0000,0000,,While that large number of inmates\Nwas escaping from prison,
+Dialogue: 0,0:04:40.49,0:04:42.62,Default,,0000,0000,0000,,he utilized that unguarded moment\Nto slip away.
+Dialogue: 0,0:04:43.49,0:04:45.29,Default,,0000,0000,0000,,That jerk Mizuki…!
+Dialogue: 0,0:04:46.54,0:04:48.49,Default,,0000,0000,0000,,– Hey! 					– Old Lady Tsunade!
+Dialogue: 0,0:04:48.95,0:04:49.62,Default,,0000,0000,0000,,S-Stop!
+Dialogue: 0,0:04:50.50,0:04:53.41,Default,,0000,0000,0000,,You were talking about Orochimaru,\Nweren’t you?!
+Dialogue: 0,0:04:53.50,0:04:55.91,Default,,0000,0000,0000,,That’s why you sent\Nthe Sensei there, right?
+Dialogue: 0,0:04:57.29,0:04:58.49,Default,,0000,0000,0000,,I don’t know, however…
+Dialogue: 0,0:04:58.87,0:05:02.33,Default,,0000,0000,0000,,the handwriting resembles the document\Nconfiscated from the facility
+Dialogue: 0,0:05:02.37,0:05:06.33,Default,,0000,0000,0000,,where Orochimaru\Nwas conducting human experiments…
+Dialogue: 0,0:05:08.49,0:05:10.12,Default,,0000,0000,0000,,Orochimaru…
+Dialogue: 0,0:05:10.79,0:05:12.62,Default,,0000,0000,0000,,This brat…was listening!
+Dialogue: 0,0:05:18.49,0:05:20.49,Default,,0000,0000,0000,,Damn, forget it.
+Dialogue: 0,0:05:20.49,0:05:21.49,Default,,0000,0000,0000,,Let him go!
+Dialogue: 0,0:05:21.50,0:05:22.29,Default,,0000,0000,0000,,Yes ma’am!
+Dialogue: 0,0:05:27.62,0:05:29.62,Default,,0000,0000,0000,,In any case,\NI’ve got to find some kind of lead.
+Dialogue: 0,0:05:29.83,0:05:31.54,Default,,0000,0000,0000,,Where do you intend to go\Nby yourself?
+Dialogue: 0,0:05:33.49,0:05:37.49,Default,,0000,0000,0000,,That goes without saying.\NI’m going to bring Sasuke back!
+Dialogue: 0,0:05:39.54,0:05:40.54,Default,,0000,0000,0000,,Gimme a break…
+Dialogue: 0,0:05:40.58,0:05:42.75,Default,,0000,0000,0000,,At a time when\Nwe don't have adequate troops…
+Dialogue: 0,0:05:42.79,0:05:47.62,Default,,0000,0000,0000,,and at a time when everybody else\Nis going all out to do their job, you…
+Dialogue: 0,0:05:52.33,0:05:53.16,Default,,0000,0000,0000,,All right.
+Dialogue: 0,0:05:53.66,0:05:58.49,Default,,0000,0000,0000,,I believe it’s certain that Orochimaru\Nhas been involved in this recent incident.
+Dialogue: 0,0:06:00.00,0:06:01.16,Default,,0000,0000,0000,,However…
+Dialogue: 0,0:06:02.83,0:06:05.12,Default,,0000,0000,0000,,The situation with Orochimaru\Nand Sasuke has already gone
+Dialogue: 0,0:06:05.16,0:06:07.54,Default,,0000,0000,0000,,beyond the point of being dealt with\Non an individual level.
+Dialogue: 0,0:06:07.58,0:06:11.08,Default,,0000,0000,0000,,This isn’t the kind of thing that you,\Na Genin, could handle alone.
+Dialogue: 0,0:06:12.66,0:06:13.95,Default,,0000,0000,0000,,If you understand me,
+Dialogue: 0,0:06:14.00,0:06:16.25,Default,,0000,0000,0000,,go and do the mission\Nyou are already assigned to!
+Dialogue: 0,0:06:25.49,0:06:27.49,Default,,0000,0000,0000,,What! Shizune is…?!
+Dialogue: 0,0:06:29.04,0:06:32.58,Default,,0000,0000,0000,,Ton Ton! Something has happened\Nto Shizune, hasn’t it?!
+Dialogue: 0,0:06:36.16,0:06:38.25,Default,,0000,0000,0000,,I don’t have any idea\Nwhat you’re saying,
+Dialogue: 0,0:06:38.29,0:06:40.37,Default,,0000,0000,0000,,but Shizune is in trouble, right?!
+Dialogue: 0,0:06:41.79,0:06:43.04,Default,,0000,0000,0000,,Got it!
+Dialogue: 0,0:06:43.49,0:06:45.37,Default,,0000,0000,0000,,I know what my job right now is!
+Dialogue: 0,0:06:45.83,0:06:47.79,Default,,0000,0000,0000,,I’m gonna rescue Shizune
+Dialogue: 0,0:06:47.83,0:06:50.95,Default,,0000,0000,0000,,and make my way to wherever\NOrochimaru is, no matter what!
+Dialogue: 0,0:06:51.20,0:06:55.25,Default,,0000,0000,0000,,And then I’m gonna slam\NOrochimaru and bring Sasuke back!
+Dialogue: 0,0:06:57.50,0:06:58.29,Default,,0000,0000,0000,,You are…!
+Dialogue: 0,0:06:58.33,0:07:00.12,Default,,0000,0000,0000,,Show me the way, Ton Ton!
+Dialogue: 0,0:07:01.16,0:07:01.91,Default,,0000,0000,0000,,Naruto!
+Dialogue: 0,0:07:02.49,0:07:04.70,Default,,0000,0000,0000,,Damn! I need to take\Nurgent measures…
+Dialogue: 0,0:07:04.91,0:07:06.04,Default,,0000,0000,0000,,What’s the matter?
+Dialogue: 0,0:07:07.87,0:07:08.66,Default,,0000,0000,0000,,Kakashi!
+Dialogue: 0,0:07:09.04,0:07:12.49,Default,,0000,0000,0000,,Well, I picked these guys up\Non my way back from my mission.
+Dialogue: 0,0:07:13.20,0:07:15.66,Default,,0000,0000,0000,,The village is in quite a restless state.
+Dialogue: 0,0:07:16.16,0:07:17.12,Default,,0000,0000,0000,,Yes.
+Dialogue: 0,0:07:18.25,0:07:21.29,Default,,0000,0000,0000,,And…has Naruto done\Nsomething yet again?
+Dialogue: 0,0:07:24.20,0:07:26.20,Default,,0000,0000,0000,,Even though it’s only a tiny clue,
+Dialogue: 0,0:07:26.25,0:07:28.58,Default,,0000,0000,0000,,now there’s finally something\Nthat links to Orochimaru!
+Dialogue: 0,0:07:29.95,0:07:32.41,Default,,0000,0000,0000,,Wait for me, Shizune!
+Dialogue: 0,0:07:32.58,0:07:34.49,Default,,0000,0000,0000,,I’m coming to your rescue!
+Dialogue: 0,0:07:37.16,0:07:40.87,Default,,0000,0000,0000,,Naruto…\NWhere is he going in such a hurry?
+Dialogue: 0,0:07:45.75,0:07:48.16,Default,,0000,0000,0000,,Fuujin, Raijin…\Nlt’s about time to head out!
+Dialogue: 0,0:07:48.50,0:07:49.49,Default,,0000,0000,0000,,– All right. 					– All right!
+Dialogue: 0,0:07:56.00,0:07:57.20,Default,,0000,0000,0000,,M-Mizuki…
+Dialogue: 0,0:08:03.49,0:08:05.49,Default,,0000,0000,0000,,I’m gonna find him without fail!
+Dialogue: 0,0:08:06.20,0:08:07.04,Default,,0000,0000,0000,,Sasuke!
+Dialogue: 0,0:08:21.49,0:08:23.49,Default,,0000,0000,0000,,Long time no see…Tsubaki.
+Dialogue: 0,0:08:24.50,0:08:27.25,Default,,0000,0000,0000,,That woman captain was\Npretty tenacious, wasn’t she?
+Dialogue: 0,0:08:27.54,0:08:30.54,Default,,0000,0000,0000,,Thanks to her, I’m starving,\NElder Brother.
+Dialogue: 0,0:08:31.87,0:08:33.29,Default,,0000,0000,0000,,I can’t stop laughing!
+Dialogue: 0,0:08:33.49,0:08:34.33,Default,,0000,0000,0000,,Oh, it stopped.
+Dialogue: 0,0:08:41.70,0:08:43.49,Default,,0000,0000,0000,,The Village Hidden in the Leaves…
+Dialogue: 0,0:08:44.70,0:08:46.49,Default,,0000,0000,0000,,Haven’t seen this vista\Nfor quite a while.
+Dialogue: 0,0:08:46.49,0:08:48.04,Default,,0000,0000,0000,,Y-Yes…
+Dialogue: 0,0:08:50.37,0:08:52.50,Default,,0000,0000,0000,,Elder Brother, this rice is hard!
+Dialogue: 0,0:08:52.70,0:08:55.33,Default,,0000,0000,0000,,Idiot! It’s one and the same once\Nit’s inside your stomach!
+Dialogue: 0,0:08:55.49,0:08:57.58,Default,,0000,0000,0000,,I see…you’re awesome, Elder Brother.
+Dialogue: 0,0:08:57.62,0:08:59.95,Default,,0000,0000,0000,,What’s this?\Nlt’s gotten all raggedy.
+Dialogue: 0,0:09:00.62,0:09:02.49,Default,,0000,0000,0000,,You need to buy a new one.
+Dialogue: 0,0:09:02.91,0:09:03.50,Default,,0000,0000,0000,,Yes.
+Dialogue: 0,0:09:04.62,0:09:06.58,Default,,0000,0000,0000,,What’s the matter, Tsubaki?
+Dialogue: 0,0:09:07.12,0:09:09.87,Default,,0000,0000,0000,,I noticed some Black Ops\Nin the mountains earlier.
+Dialogue: 0,0:09:10.37,0:09:12.49,Default,,0000,0000,0000,,In a secluded place\Nin the mountains like this!
+Dialogue: 0,0:09:18.75,0:09:19.58,Default,,0000,0000,0000,,I see.
+Dialogue: 0,0:09:23.66,0:09:26.95,Default,,0000,0000,0000,,You won’t tell me anything, will you?
+Dialogue: 0,0:09:29.49,0:09:34.25,Default,,0000,0000,0000,,To you, the Leaf Village looks just\Nlike it did before, doesn’t it, Mizuki?
+Dialogue: 0,0:09:36.16,0:09:36.91,Default,,0000,0000,0000,,However…
+Dialogue: 0,0:09:37.87,0:09:42.75,Default,,0000,0000,0000,,A lot of people died while\Nyou were away, Mizuki.
+Dialogue: 0,0:09:44.49,0:09:46.33,Default,,0000,0000,0000,,This rice soup is great,\Nhuh, Elder Brother?
+Dialogue: 0,0:09:46.37,0:09:49.20,Default,,0000,0000,0000,,Yeah… Very different from the institution.
+Dialogue: 0,0:09:50.79,0:09:52.00,Default,,0000,0000,0000,,Are you leaving again?
+Dialogue: 0,0:09:53.41,0:09:54.08,Default,,0000,0000,0000,,Yeah…
+Dialogue: 0,0:09:54.75,0:09:55.83,Default,,0000,0000,0000,,Stop!
+Dialogue: 0,0:09:56.49,0:10:01.04,Default,,0000,0000,0000,,Please, Mizuki! Please end\Nyour involvement with Orochimaru!
+Dialogue: 0,0:10:05.00,0:10:08.49,Default,,0000,0000,0000,,Because of Orochimaru,\Nmany people died!
+Dialogue: 0,0:10:09.49,0:10:13.62,Default,,0000,0000,0000,,Because of Orochimaru,\Nthe Leaf Village was in shambles!
+Dialogue: 0,0:10:14.49,0:10:15.49,Default,,0000,0000,0000,,Even the Third Hokage was…
+Dialogue: 0,0:10:17.49,0:10:21.16,Default,,0000,0000,0000,,Only if you hadn’t gotten involved\Nwith Orochimaru, Mizuki,
+Dialogue: 0,0:10:21.37,0:10:23.62,Default,,0000,0000,0000,,you and I would now…
+Dialogue: 0,0:10:28.54,0:10:31.04,Default,,0000,0000,0000,,Everything will be fine, Tsubaki.
+Dialogue: 0,0:10:31.49,0:10:33.79,Default,,0000,0000,0000,,This time, I won’t make the mistake
+Dialogue: 0,0:10:33.83,0:10:36.25,Default,,0000,0000,0000,,of having that Nine-Tailed brat\Nget in my way.
+Dialogue: 0,0:10:36.41,0:10:37.37,Default,,0000,0000,0000,,And then…
+Dialogue: 0,0:10:37.49,0:10:41.91,Default,,0000,0000,0000,,That boy fought for the Leaf\Nwhen Orochimaru attacked!
+Dialogue: 0,0:10:44.49,0:10:46.12,Default,,0000,0000,0000,,That Nine-Tailed brat did…?
+Dialogue: 0,0:10:47.75,0:10:49.25,Default,,0000,0000,0000,,That brat did…?!
+Dialogue: 0,0:10:53.04,0:10:57.49,Default,,0000,0000,0000,,That’s right. He’s not some scary kid\Nlike you said he was!
+Dialogue: 0,0:10:57.70,0:11:00.49,Default,,0000,0000,0000,,So please stop with\Nyour foolish ideas!
+Dialogue: 0,0:11:01.00,0:11:05.49,Default,,0000,0000,0000,,It’s already over!\Nlt’s all already over! So…
+Dialogue: 0,0:11:10.49,0:11:13.79,Default,,0000,0000,0000,,No… It's not over yet!
+Dialogue: 0,0:11:15.29,0:11:17.95,Default,,0000,0000,0000,,So that Nine-Tailed brat is\Nacting the hero, huh?
+Dialogue: 0,0:11:18.20,0:11:19.70,Default,,0000,0000,0000,,Don’t make me laugh!
+Dialogue: 0,0:11:20.12,0:11:23.91,Default,,0000,0000,0000,,Half-wits as always, huh!\NThose Leaf guys!
+Dialogue: 0,0:11:25.49,0:11:26.45,Default,,0000,0000,0000,,Mizuki…?!
+Dialogue: 0,0:11:26.49,0:11:27.49,Default,,0000,0000,0000,,Come!
+Dialogue: 0,0:11:29.75,0:11:32.49,Default,,0000,0000,0000,,I will get my hands on\NOrochimaru’s ultimate power!
+Dialogue: 0,0:11:32.50,0:11:35.20,Default,,0000,0000,0000,,And will teach this village\Na lesson!
+Dialogue: 0,0:11:36.08,0:11:39.66,Default,,0000,0000,0000,,Power…\NOrochimaru’s ultimate power!
+Dialogue: 0,0:11:42.49,0:11:47.04,Default,,0000,0000,0000,,If I do that…\NYou and I will have everything go our way!
+Dialogue: 0,0:11:51.49,0:11:52.45,Default,,0000,0000,0000,,Mizuki…
+Dialogue: 0,0:11:54.62,0:11:55.49,Default,,0000,0000,0000,,Mizuki!
+Dialogue: 0,0:11:56.58,0:11:57.58,Default,,0000,0000,0000,,Please…
+Dialogue: 0,0:11:58.45,0:12:01.00,Default,,0000,0000,0000,,Become the kind and gentle Mizuki\Nagain just like before.
+Dialogue: 0,0:12:01.75,0:12:04.79,Default,,0000,0000,0000,,If you really love me…
+Dialogue: 0,0:12:05.50,0:12:07.25,Default,,0000,0000,0000,,don’t do anything stupid!
+Dialogue: 0,0:12:09.54,0:12:10.49,Default,,0000,0000,0000,,Tsubaki…
+Dialogue: 0,0:12:22.25,0:12:23.45,Default,,0000,0000,0000,,All right then…
+Dialogue: 0,0:12:23.66,0:12:25.75,Default,,0000,0000,0000,,Well then,\NI’ll leave the rest in your hands.
+Dialogue: 0,0:12:26.50,0:12:27.66,Default,,0000,0000,0000,,Not so quickly!
+Dialogue: 0,0:12:28.58,0:12:31.08,Default,,0000,0000,0000,,Here you are! Next for you\Nis an S-rank mission!
+Dialogue: 0,0:12:31.70,0:12:34.25,Default,,0000,0000,0000,,She’s a real slave driver.
+Dialogue: 0,0:12:37.33,0:12:38.45,Default,,0000,0000,0000,,The Iruka Team…
+Dialogue: 0,0:12:38.49,0:12:40.49,Default,,0000,0000,0000,,has completed rounding up\Nthe inmates.
+Dialogue: 0,0:12:40.49,0:12:43.49,Default,,0000,0000,0000,,Huh?! Kakashi Sensei!\NI beg your pardon!
+Dialogue: 0,0:12:43.49,0:12:45.49,Default,,0000,0000,0000,,Don’t worry about it.\NGood work.
+Dialogue: 0,0:12:46.49,0:12:50.49,Default,,0000,0000,0000,,It looks like neither of us are going\Nto get a chance to rest, Iruka Sensei.
+Dialogue: 0,0:12:54.08,0:12:55.25,Default,,0000,0000,0000,,The Art of Summoning!
+Dialogue: 0,0:12:58.91,0:13:00.49,Default,,0000,0000,0000,,Hey, youngster…
+Dialogue: 0,0:13:01.25,0:13:04.00,Default,,0000,0000,0000,,Well, Iruka Sensei,\NI’ll leave the rest to you.
+Dialogue: 0,0:13:04.45,0:13:06.00,Default,,0000,0000,0000,,Huh? Huh?
+Dialogue: 0,0:13:06.49,0:13:09.49,Default,,0000,0000,0000,,Iruka, you have a mission.\NTime is of the essence.
+Dialogue: 0,0:13:10.37,0:13:11.62,Default,,0000,0000,0000,,Y-Yes, ma’am?
+Dialogue: 0,0:13:17.25,0:13:19.58,Default,,0000,0000,0000,,Let’s hurry.\NWe’ve taken more time than anticipated.
+Dialogue: 0,0:13:24.87,0:13:26.49,Default,,0000,0000,0000,,Mizuki…
+Dialogue: 0,0:13:30.29,0:13:31.58,Default,,0000,0000,0000,,How about it, Ton Ton?
+Dialogue: 0,0:13:34.25,0:13:34.75,Default,,0000,0000,0000,,Here he comes!
+Dialogue: 0,0:13:37.75,0:13:39.45,Default,,0000,0000,0000,,W-Wait, Naruto!
+Dialogue: 0,0:13:39.62,0:13:41.08,Default,,0000,0000,0000,,Iruka Sensei?!
+Dialogue: 0,0:13:41.49,0:13:42.37,Default,,0000,0000,0000,,Ton Ton?!
+Dialogue: 0,0:13:45.16,0:13:47.33,Default,,0000,0000,0000,,So this is what I smelled…
+Dialogue: 0,0:13:49.41,0:13:51.04,Default,,0000,0000,0000,,Thanks for your hard work, Ton Ton.
+Dialogue: 0,0:13:51.49,0:13:54.00,Default,,0000,0000,0000,,I’ll look out for these two\Nfrom here onward,
+Dialogue: 0,0:13:54.04,0:13:55.58,Default,,0000,0000,0000,,so you go back to the village.
+Dialogue: 0,0:14:01.12,0:14:04.37,Default,,0000,0000,0000,,Brother Mizuki…\NShouldn’t we be hurrying?
+Dialogue: 0,0:14:04.49,0:14:07.04,Default,,0000,0000,0000,,T-To Orochimaru’s?
+Dialogue: 0,0:14:11.25,0:14:13.16,Default,,0000,0000,0000,,That Nine-Tailed brat…
+Dialogue: 0,0:14:16.16,0:14:18.75,Default,,0000,0000,0000,,Don’t you dare touch, Iruka Sensei!
+Dialogue: 0,0:14:19.50,0:14:20.54,Default,,0000,0000,0000,,Otherwise, I’ll kill you!
+Dialogue: 0,0:14:25.29,0:14:28.08,Default,,0000,0000,0000,,– In that case, I’ll go for it!\N– In that case, I’ll go for it!
+Dialogue: 0,0:14:37.29,0:14:39.16,Default,,0000,0000,0000,,I may have done\Na little too much!
+Dialogue: 0,0:14:41.16,0:14:42.49,Default,,0000,0000,0000,,Don’t tell me that…
+Dialogue: 0,0:14:43.37,0:14:46.25,Default,,0000,0000,0000,,that failure of a Nine-Tailed brat is…
+Dialogue: 0,0:14:47.00,0:14:49.45,Default,,0000,0000,0000,,Elder Brother…\NDo Nine-Tails taste good?
+Dialogue: 0,0:14:49.54,0:14:52.08,Default,,0000,0000,0000,,Yeah…I’m sure they’re good.
+Dialogue: 0,0:14:53.62,0:14:57.49,Default,,0000,0000,0000,,Iruka Sensei, you didn’t come here\Njust to drag me home?
+Dialogue: 0,0:14:57.87,0:15:00.04,Default,,0000,0000,0000,,Well, you’re not the kind of guy\Nwho would go back calmly
+Dialogue: 0,0:15:00.08,0:15:01.75,Default,,0000,0000,0000,,if I simply said\N“Come back,” are you!
+Dialogue: 0,0:15:01.95,0:15:06.16,Default,,0000,0000,0000,,You are right, Iruka Sensei!\NYou really know me, don’t you!
+Dialogue: 0,0:15:06.49,0:15:08.49,Default,,0000,0000,0000,,Don’t get carried away like that!
+Dialogue: 0,0:15:08.49,0:15:10.49,Default,,0000,0000,0000,,If you let your guard down\Nyou’ll get your fingers burned!
+Dialogue: 0,0:15:12.79,0:15:14.87,Default,,0000,0000,0000,,Huh? Did you find something?
+Dialogue: 0,0:15:15.50,0:15:19.37,Default,,0000,0000,0000,,Yeah… It’s a bad inmate’s smell!
+Dialogue: 0,0:15:24.49,0:15:28.04,Default,,0000,0000,0000,,Now then, what in the world\Ncan I do with these now?
+Dialogue: 0,0:15:31.49,0:15:33.70,Default,,0000,0000,0000,,It smells like\Nwe’re getting pretty close now.
+Dialogue: 0,0:15:39.50,0:15:40.83,Default,,0000,0000,0000,,Shizune?!
+Dialogue: 0,0:15:41.58,0:15:43.25,Default,,0000,0000,0000,,A-Are you all right?
+Dialogue: 0,0:15:44.33,0:15:45.58,Default,,0000,0000,0000,,N-Naruto?!
+Dialogue: 0,0:15:47.45,0:15:49.49,Default,,0000,0000,0000,,Prisoner’s garb is scattered\Nabout here and there.
+Dialogue: 0,0:15:49.49,0:15:53.50,Default,,0000,0000,0000,,It looks like somebody’s trying\Nto buy time by deceiving my nose…
+Dialogue: 0,0:15:53.75,0:15:55.49,Default,,0000,0000,0000,,Mizuki was just one step away
+Dialogue: 0,0:15:55.49,0:15:57.16,Default,,0000,0000,0000,,and we ended up\Nletting them get away.
+Dialogue: 0,0:15:57.33,0:15:59.41,Default,,0000,0000,0000,,But I’m so glad you’re safe.
+Dialogue: 0,0:15:59.49,0:16:00.20,Default,,0000,0000,0000,,Yeah…
+Dialogue: 0,0:16:00.49,0:16:03.33,Default,,0000,0000,0000,,My comrades are pursing Mizuki.\NLet’s hurry!
+Dialogue: 0,0:16:03.83,0:16:04.62,Default,,0000,0000,0000,,Okay.
+Dialogue: 0,0:16:05.41,0:16:06.25,Default,,0000,0000,0000,,This smells!
+Dialogue: 0,0:16:06.66,0:16:09.70,Default,,0000,0000,0000,,There’s a strong smell\Nof prisoners wafting.
+Dialogue: 0,0:16:10.54,0:16:12.62,Default,,0000,0000,0000,,It’s Mizuki and the others!\NThere’s no mistake!
+Dialogue: 0,0:16:12.79,0:16:15.49,Default,,0000,0000,0000,,All right! We’re almost there!
+Dialogue: 0,0:16:15.83,0:16:18.37,Default,,0000,0000,0000,,But…if we enter the basin\Njust like this
+Dialogue: 0,0:16:18.41,0:16:20.83,Default,,0000,0000,0000,,it will make it easy for\Nthe enemy to attack from the plateau.
+Dialogue: 0,0:16:21.37,0:16:22.49,Default,,0000,0000,0000,,It would be safer to make a detour
+Dialogue: 0,0:16:22.50,0:16:24.37,Default,,0000,0000,0000,,and make our way up\Nto the top of a hill.
+Dialogue: 0,0:16:24.41,0:16:25.91,Default,,0000,0000,0000,,What are you talking about?!
+Dialogue: 0,0:16:25.95,0:16:29.33,Default,,0000,0000,0000,,We have a really good open view,\Nso we’ll be fine!
+Dialogue: 0,0:16:29.49,0:16:32.70,Default,,0000,0000,0000,,Hmm…Those guys are trying to buy time.
+Dialogue: 0,0:16:33.29,0:16:35.54,Default,,0000,0000,0000,,If we make a detour, we may not\Nbe able to catch up with them!
+Dialogue: 0,0:16:41.45,0:16:42.49,Default,,0000,0000,0000,,Damn!
+Dialogue: 0,0:16:42.70,0:16:45.20,Default,,0000,0000,0000,,How could I have fallen\Nfor such a trap?!
+Dialogue: 0,0:16:45.50,0:16:46.49,Default,,0000,0000,0000,,Be careful, Naruto!
+Dialogue: 0,0:16:47.37,0:16:50.04,Default,,0000,0000,0000,,This time, it’s not a dummy.\NA real entity is lurking there!
+Dialogue: 0,0:16:50.70,0:16:51.49,Default,,0000,0000,0000,,A rock?!
+Dialogue: 0,0:16:59.33,0:17:01.87,Default,,0000,0000,0000,,– Yippee!\N– Thank you for the meal!
+Dialogue: 0,0:17:06.83,0:17:07.87,Default,,0000,0000,0000,,Naruto! Behind you!
+Dialogue: 0,0:17:08.37,0:17:09.04,Default,,0000,0000,0000,,Shizune!
+Dialogue: 0,0:17:11.91,0:17:14.49,Default,,0000,0000,0000,,W-Why is Shizune…?
+Dialogue: 0,0:17:14.66,0:17:17.49,Default,,0000,0000,0000,,Move away, Naruto!\NThat’s a fake!
+Dialogue: 0,0:17:19.45,0:17:21.49,Default,,0000,0000,0000,,What a delight to see you\Nafter such a long time…
+Dialogue: 0,0:17:21.49,0:17:23.29,Default,,0000,0000,0000,,Iruka… Naruto!
+Dialogue: 0,0:17:23.41,0:17:25.95,Default,,0000,0000,0000,,Iruka Sensei, who's that guy?!
+Dialogue: 0,0:17:27.08,0:17:28.49,Default,,0000,0000,0000,,It’s Mizuki, Naruto.
+Dialogue: 0,0:17:28.49,0:17:32.58,Default,,0000,0000,0000,,Mizuki?! But he seems very\Ndifferent from before!
+Dialogue: 0,0:17:33.04,0:17:35.87,Default,,0000,0000,0000,,That's right, I remember that failure who\Nin his Academy days
+Dialogue: 0,0:17:35.91,0:17:38.50,Default,,0000,0000,0000,,couldn’t even master\Na decent Transformation Jutsu!
+Dialogue: 0,0:17:39.20,0:17:40.95,Default,,0000,0000,0000,,Damn! He’s pissing me off!
+Dialogue: 0,0:17:41.49,0:17:43.95,Default,,0000,0000,0000,,How’s that, Iruka ?\NYou hardly recognize me, do you?
+Dialogue: 0,0:17:44.33,0:17:47.58,Default,,0000,0000,0000,,It’s true that\Nthere’s no comparison with before…
+Dialogue: 0,0:17:47.83,0:17:51.50,Default,,0000,0000,0000,,Thanks to being confined in\Nthat sordid and boring prison cell
+Dialogue: 0,0:17:51.54,0:17:53.54,Default,,0000,0000,0000,,I was able to concentrate\Non my ascetic training.
+Dialogue: 0,0:17:53.91,0:17:55.49,Default,,0000,0000,0000,,I thank you, Iruka…
+Dialogue: 0,0:17:56.41,0:17:58.04,Default,,0000,0000,0000,,When did you realize it was me?
+Dialogue: 0,0:17:58.75,0:18:01.41,Default,,0000,0000,0000,,When we rescued you while\Nyou pretended to be Shizune,
+Dialogue: 0,0:18:01.45,0:18:03.91,Default,,0000,0000,0000,,you said,\N“My colleagues are pursuing Mizuki.”
+Dialogue: 0,0:18:04.49,0:18:07.49,Default,,0000,0000,0000,,The only time a subordinate leaves the\Nteam leader behind to pursue the enemy
+Dialogue: 0,0:18:07.49,0:18:09.70,Default,,0000,0000,0000,,would be when the team leader had\Neither died or was near death…
+Dialogue: 0,0:18:10.58,0:18:12.49,Default,,0000,0000,0000,,But you had incurred only\Nslight injuries.
+Dialogue: 0,0:18:13.91,0:18:15.66,Default,,0000,0000,0000,,A textbook answer.
+Dialogue: 0,0:18:15.91,0:18:18.04,Default,,0000,0000,0000,,And also, you didn’t say anything
+Dialogue: 0,0:18:18.08,0:18:20.87,Default,,0000,0000,0000,,when I suggested making\Na detour from our route.
+Dialogue: 0,0:18:21.49,0:18:23.37,Default,,0000,0000,0000,,If your subordinates were in pursuit,
+Dialogue: 0,0:18:23.41,0:18:26.41,Default,,0000,0000,0000,,it would be a safer strategy to watch\Nthe enemy’s movements from a plateau!
+Dialogue: 0,0:18:27.49,0:18:31.70,Default,,0000,0000,0000,,Sharp as you are, you used\Nthe prisoner’s garb as a decoy
+Dialogue: 0,0:18:31.75,0:18:36.49,Default,,0000,0000,0000,,not to gain time,\Nbut to lead us into this trap!
+Dialogue: 0,0:18:37.45,0:18:40.49,Default,,0000,0000,0000,,Wow…Your power of analysis\Nis as good as always.
+Dialogue: 0,0:18:40.49,0:18:42.50,Default,,0000,0000,0000,,Makes me remember the old days!
+Dialogue: 0,0:18:42.87,0:18:45.49,Default,,0000,0000,0000,,Mizuki… Stop with the stupid act!
+Dialogue: 0,0:18:46.49,0:18:50.25,Default,,0000,0000,0000,,You have no idea of\Nthe hardships I’ve endured!
+Dialogue: 0,0:18:50.58,0:18:53.33,Default,,0000,0000,0000,,Fuujin! Raijin! Do it!
+Dialogue: 0,0:18:53.62,0:18:54.62,Default,,0000,0000,0000,,– Yippee! 					– Yippee!
+Dialogue: 0,0:18:54.66,0:18:56.49,Default,,0000,0000,0000,,– Come on!\N– Stop it, Naruto!
+Dialogue: 0,0:18:56.83,0:18:58.95,Default,,0000,0000,0000,,Your opponent is me!
+Dialogue: 0,0:19:01.33,0:19:02.33,Default,,0000,0000,0000,,Get away, Naruto!
+Dialogue: 0,0:19:02.58,0:19:05.33,Default,,0000,0000,0000,,I’ll be fine, Iruka Sensei!
+Dialogue: 0,0:19:07.91,0:19:08.79,Default,,0000,0000,0000,,Naruto?!
+Dialogue: 0,0:19:08.83,0:19:11.16,Default,,0000,0000,0000,,So you have the leeway\Nto look away, do you?!
+Dialogue: 0,0:19:11.20,0:19:13.04,Default,,0000,0000,0000,,Flee…Naruto!
+Dialogue: 0,0:19:17.79,0:19:19.16,Default,,0000,0000,0000,,Damn!
+Dialogue: 0,0:19:19.70,0:19:21.16,Default,,0000,0000,0000,,I’m not gonna lose!
+Dialogue: 0,0:19:22.41,0:19:24.49,Default,,0000,0000,0000,,Multi-Shadow Clone Jutsu!
+Dialogue: 0,0:19:29.25,0:19:29.95,Default,,0000,0000,0000,,What?!
+Dialogue: 0,0:19:32.25,0:19:34.37,Default,,0000,0000,0000,,It’s the same face here and over too.
+Dialogue: 0,0:19:36.37,0:19:38.79,Default,,0000,0000,0000,,1, 2, 3, 4, 5, 6…
+Dialogue: 0,0:19:38.95,0:19:41.91,Default,,0000,0000,0000,,Elder Brother, I don’t have\Nenough fingers to count them all!
+Dialogue: 0,0:19:42.16,0:19:44.66,Default,,0000,0000,0000,,You idiot, Raijin.\NUse my hands too!
+Dialogue: 0,0:19:44.70,0:19:47.29,Default,,0000,0000,0000,,Wow! You’re so smart, Fuujin…
+Dialogue: 0,0:19:49.49,0:19:51.25,Default,,0000,0000,0000,,Wh-What the hell are\Nthose guys about?!
+Dialogue: 0,0:19:51.62,0:19:52.91,Default,,0000,0000,0000,,Don’t get in the way!
+Dialogue: 0,0:19:53.08,0:19:55.29,Default,,0000,0000,0000,,I have business with Mizuki!
+Dialogue: 0,0:19:56.12,0:19:58.75,Default,,0000,0000,0000,,Elder Brother,\Nhe said we were in the way.
+Dialogue: 0,0:19:59.16,0:20:02.79,Default,,0000,0000,0000,,But take a look! Elder Brother!\NMizuki looks busy.
+Dialogue: 0,0:20:05.79,0:20:08.49,Default,,0000,0000,0000,,That’s true. He looks busy.
+Dialogue: 0,0:20:08.70,0:20:10.95,Default,,0000,0000,0000,,And also, if we go back just like this
+Dialogue: 0,0:20:11.00,0:20:12.91,Default,,0000,0000,0000,,we won’t be able to eat\Na sumptuous meal!
+Dialogue: 0,0:20:13.37,0:20:16.29,Default,,0000,0000,0000,,That’s right.\NI forgot about the sumptuous meal!
+Dialogue: 0,0:20:16.58,0:20:19.37,Default,,0000,0000,0000,,– Sumptuous meal!\N– Sumptuous meal!
+Dialogue: 0,0:20:19.95,0:20:22.20,Default,,0000,0000,0000,,I feel a little thrown off balance.
+Dialogue: 0,0:20:23.29,0:20:26.16,Default,,0000,0000,0000,,Let’s regroup, everybody!
+Dialogue: 0,0:20:26.70,0:20:27.49,Default,,0000,0000,0000,,Go!
+Dialogue: 0,0:20:41.12,0:20:42.75,Default,,0000,0000,0000,,I’m itchy, Elder Brother…
+Dialogue: 0,0:20:43.49,0:20:45.04,Default,,0000,0000,0000,,Yeah, itchy…
+Dialogue: 0,0:20:55.20,0:20:58.49,Default,,0000,0000,0000,,My punches aren’t having\Nany effect whatsoever…
+Dialogue: 0,0:21:27.54,0:21:31.91,Default,,0000,0000,0000,,Crappy news pass us by
+Dialogue: 0,0:21:31.95,0:21:35.49,Default,,0000,0000,0000,,And you become speechless
+Dialogue: 0,0:21:36.70,0:21:41.49,Default,,0000,0000,0000,,My voice is way too soft
+Dialogue: 0,0:21:41.49,0:21:44.54,Default,,0000,0000,0000,,So you don’t answer
+Dialogue: 0,0:21:45.66,0:21:50.41,Default,,0000,0000,0000,,You’re crying   Crying alone
+Dialogue: 0,0:21:50.45,0:21:55.25,Default,,0000,0000,0000,,What can I do?   I’m crying too
+Dialogue: 0,0:21:55.29,0:21:57.62,Default,,0000,0000,0000,,“Let my lonely scream ring out\Nthrough the night”
+Dialogue: 0,0:21:57.66,0:22:06.95,Default,,0000,0000,0000,,I’ll thrash this confused era\Nwith my speed   Yeah
+Dialogue: 0,0:22:07.00,0:22:16.49,Default,,0000,0000,0000,,And I’ll thrash this confused night\Nwith my speed   Yeah
+Dialogue: 0,0:22:16.50,0:22:25.66,Default,,0000,0000,0000,,I’ll thrash them with my piercing guitar\Nand my speed   Yeah
+Dialogue: 0,0:22:25.87,0:22:37.49,Default,,0000,0000,0000,,This sinking world and its evil bastards,\NI’ll kick their butt   Yeah
+Dialogue: 0,0:22:50.16,0:22:52.49,Default,,0000,0000,0000,,Damn! What are these two?!
+Dialogue: 0,0:22:52.58,0:22:53.87,Default,,0000,0000,0000,,They're not just big!
+Dialogue: 0,0:22:53.95,0:22:58.79,Default,,0000,0000,0000,,They can't be beat with\Njust technique and Jutsu!
+Dialogue: 0,0:22:59.25,0:23:02.49,Default,,0000,0000,0000,,Just when I need to get Mizuki!
+Dialogue: 0,0:23:03.45,0:23:06.49,Default,,0000,0000,0000,,In any case,\NI can't waste time onwith them!
+Dialogue: 0,0:23:06.49,0:23:10.04,Default,,0000,0000,0000,,I have to circumvent them somehow\Nand beat 'em to the punch!
+Dialogue: 0,0:23:10.75,0:23:14.29,Default,,0000,0000,0000,,Next episode, “A New Squad!\NTwo People and a Dog?!”
