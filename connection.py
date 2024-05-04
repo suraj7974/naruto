@@ -1,11 +1,12 @@
+from pyvis.network import Network
+import matplotlib.pyplot as plt
+import networkx as nx
 from nltk import sent_tokenize
 import nltk
 import en_core_web_sm
 import spacy
 import pandas as pd
 from glob import glob
-nltk.download('punkt')
-
 path_to_subtitles = sorted(glob("./subtitles/*.ass"))
 path_to_subtitles[:10]
 scripts = []
@@ -32,6 +33,7 @@ nlp = en_core_web_sm.load()
 doc = nlp("Sasuke went to konoha")
 for ent in doc.ents:
     print(ent.text, ent.label_)
+# nltk.download('punkt')
 
 
 def get_ners(script):
@@ -69,3 +71,31 @@ for row in df['ners']:
                 if entity != entity_in_window:
                     entity_rel = sorted([entity, entity_in_window])
                     entity_relationship.append(entity_rel)
+
+relationship_df = pd.DataFrame({'value': entity_relationship})
+relationship_df['source'] = relationship_df['value'].apply(lambda x: x[0])
+relationship_df['target'] = relationship_df['value'].apply(lambda x: x[1])
+relationship_df = relationship_df.groupby(
+    ['source', 'target']).count().reset_index()
+relationship_df = relationship_df.sort_values('value', ascending=False)
+relationship_df.head()
+relationship_df = relationship_df.head(200)
+
+G = nx.from_pandas_edgelist(relationship_df,
+                            source="source",
+                            target="target",
+                            edge_attr="value",
+                            create_using=nx.Graph())
+plt.figure(figsize=(10, 10))
+pos = nx.kamada_kawai_layout(G)
+nx.draw(G, with_labels=True, node_color="skyblue",
+        edge_cmap=plt.cm.Blues, pos=pos)
+plt.show()
+net = Network(notebook=True, width="1000px", height="700px",
+              bgcolor="#222222", font_color="white")
+node_degree = dict(G.degree)
+
+nx.set_node_attributes(G, node_degree, 'size')
+
+net.from_nx(G)
+net.show('naruto.html')
