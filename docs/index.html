@@ -1,0 +1,537 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <script src="lib/bindings/utils.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css"
+      integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js"
+      integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <center>
+      <h1></h1>
+    </center>
+
+    <!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <center>
+      <h1></h1>
+    </center>
+    <style type="text/css">
+      #mynetwork {
+        width: 1000px;
+        height: 700px;
+        background-color: #222222;
+        border: 1px solid lightgray;
+        position: relative;
+        float: left;
+      }
+
+      #loadingBar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 1000px;
+        height: 700px;
+        background-color: rgba(200, 200, 200, 0.8);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        opacity: 1;
+      }
+
+      #bar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        margin: auto auto auto auto;
+        border-radius: 11px;
+        border: 2px solid rgba(30, 30, 30, 0.05);
+        background: rgb(0, 173, 246); /* Old browsers */
+        box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+      }
+
+      #border {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 500px;
+        height: 23px;
+        margin: auto auto auto auto;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+      #text {
+        position: absolute;
+        top: 8px;
+        left: 530px;
+        width: 30px;
+        height: 50px;
+        margin: auto auto auto auto;
+        font-size: 22px;
+        color: #000000;
+      }
+
+      div.outerBorder {
+        position: relative;
+        top: 400px;
+        width: 600px;
+        height: 44px;
+        margin: auto auto auto auto;
+        border: 8px solid rgba(0, 0, 0, 0.1);
+        background: rgb(252, 252, 252); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          color-stop(0%, rgba(252, 252, 252, 1)),
+          color-stop(100%, rgba(237, 237, 237, 1))
+        ); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+        border-radius: 72px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card" style="width: 100%">
+      <div id="mynetwork" class="card-body"></div>
+    </div>
+
+    <div id="loadingBar">
+      <div class="outerBorder">
+        <div id="text">0%</div>
+        <div id="border">
+          <div id="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // initialize global variables.
+      var edges;
+      var nodes;
+      var allNodes;
+      var allEdges;
+      var nodeColors;
+      var originalNodes;
+      var network;
+      var container;
+      var options, data;
+      var filter = {
+        item: "",
+        property: "",
+        value: [],
+      };
+
+      // This method is responsible for drawing the graph, returns the drawn network
+      function drawGraph() {
+        var container = document.getElementById("mynetwork");
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([
+          { color: "#97c2fc", font: { color: "white" }, id: "Sakura", label: "Sakura", shape: "dot", size: 12 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Sasuke", label: "Sasuke", shape: "dot", size: 39 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kakashi", label: "Kakashi", shape: "dot", size: 20 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Naruto", label: "Naruto", shape: "dot", size: 13 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Lee", label: "Lee", shape: "dot", size: 22 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Lady", label: "Lady", shape: "dot", size: 23 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Gaara", label: "Gaara", shape: "dot", size: 15 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Guy", label: "Guy", shape: "dot", size: 16 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Choji", label: "Choji", shape: "dot", size: 14 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kurenai", label: "Kurenai", shape: "dot", size: 8 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Jutsu", label: "Jutsu", shape: "dot", size: 14 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Iruka", label: "Iruka", shape: "dot", size: 12 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Ino", label: "Ino", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Hurry", label: "Hurry", shape: "dot", size: 8 },
+          { color: "#97c2fc", font: { color: "white" }, id: "the", label: "the", shape: "dot", size: 4 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Arashi", label: "Arashi", shape: "dot", size: 4 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Bushy", label: "Bushy", shape: "dot", size: 7 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Buddha\n", label: "Buddha\n", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Itachi", label: "Itachi", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Sensei", label: "Sensei", shape: "dot", size: 7 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Anbu", label: "Anbu", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Konohamaru", label: "Konohamaru", shape: "dot", size: 6 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Clan", label: "Clan", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Demon", label: "Demon", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kekkei", label: "Kekkei", shape: "dot", size: 4 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Curse", label: "Curse", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Genjutsu", label: "Genjutsu", shape: "dot", size: 4 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Shikamaru", label: "Shikamaru", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Chunin", label: "Chunin", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Mark\n", label: "Mark\n", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kankuro", label: "Kankuro", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Haku", label: "Haku", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Shinobi", label: "Shinobi", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Exam", label: "Exam", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Yoroi", label: "Yoroi", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "n\u2019t", label: "n\u2019t", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Jiraiya", label: "Jiraiya", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Elder", label: "Elder", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Ninjutsu", label: "Ninjutsu", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Hooray", label: "Hooray", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Chakra", label: "Chakra", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Hokage", label: "Hokage", shape: "dot", size: 5 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Asuma", label: "Asuma", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Sealing", label: "Sealing", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Buckteeth", label: "Buckteeth", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Mist", label: "Mist", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Rock", label: "Rock", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Karashi", label: "Karashi", shape: "dot", size: 5 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Tenten", label: "Tenten", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kurosuki", label: "Kurosuki", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Grandma", label: "Grandma", shape: "dot", size: 6 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Lee\u2019s", label: "Lee\u2019s", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Dojo", label: "Dojo", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Primary", label: "Primary", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Sand", label: "Sand", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Desert", label: "Desert", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Akio", label: "Akio", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Rasengan", label: "Rasengan", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Mizuki", label: "Mizuki", shape: "dot", size: 8 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Fox", label: "Fox", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Ton", label: "Ton", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Tsubaki", label: "Tsubaki", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Shizune", label: "Shizune", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Hinata", label: "Hinata", shape: "dot", size: 5 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Shino", label: "Shino", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Yurinoshin", label: "Yurinoshin", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Genno", label: "Genno", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Tsunade", label: "Tsunade", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Akahoshi", label: "Akahoshi", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Owashi", label: "Owashi", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Chishima", label: "Chishima", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kikusuke", label: "Kikusuke", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Action", label: "Action", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Chen", label: "Chen", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Peking", label: "Peking", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Heart", label: "Heart", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Lucky", label: "Lucky", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kunihisa", label: "Kunihisa", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Raiga", label: "Raiga", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Dan", label: "Dan", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Jigumo", label: "Jigumo", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Grandpa", label: "Grandpa", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Man", label: "Man", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Hiashi", label: "Hiashi", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Hizashi", label: "Hizashi", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Byakugan", label: "Byakugan", shape: "dot", size: 3 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Tyson", label: "Tyson", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Yoga", label: "Yoga", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Miss", label: "Miss", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Sumaru", label: "Sumaru", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Kisame", label: "Kisame", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Gosunkugi", label: "Gosunkugi", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Sazanami", label: "Sazanami", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Lord", label: "Lord", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Jin", label: "Jin", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Tora", label: "Tora", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Shun", label: "Shun", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Mind", label: "Mind", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Ninja", label: "Ninja", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Moso", label: "Moso", shape: "dot", size: 2 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Ding", label: "Ding", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Ding-dong", label: "Ding-dong", shape: "dot", size: 1 },
+          { color: "#97c2fc", font: { color: "white" }, id: "Komei", label: "Komei", shape: "dot", size: 1 },
+        ]);
+        edges = new vis.DataSet([
+          { from: "Sakura", to: "Sasuke", value: 170, width: 1 },
+          { from: "Sakura", to: "Kakashi", value: 29, width: 1 },
+          { from: "Sakura", to: "Naruto", value: 29, width: 1 },
+          { from: "Sakura", to: "Lee", value: 28, width: 1 },
+          { from: "Sakura", to: "Lady", value: 19, width: 1 },
+          { from: "Sakura", to: "Gaara", value: 16, width: 1 },
+          { from: "Sakura", to: "Guy", value: 15, width: 1 },
+          { from: "Sakura", to: "Choji", value: 10, width: 1 },
+          { from: "Sakura", to: "Kurenai", value: 10, width: 1 },
+          { from: "Sakura", to: "Jutsu", value: 8, width: 1 },
+          { from: "Sakura", to: "Iruka", value: 7, width: 1 },
+          { from: "Sakura", to: "Ino", value: 6, width: 1 },
+          { from: "Sasuke", to: "Kakashi", value: 131, width: 1 },
+          { from: "Sasuke", to: "Gaara", value: 67, width: 1 },
+          { from: "Sasuke", to: "Lee", value: 63, width: 1 },
+          { from: "Sasuke", to: "Naruto", value: 60, width: 1 },
+          { from: "Sasuke", to: "Jutsu", value: 44, width: 1 },
+          { from: "Sasuke", to: "Choji", value: 34, width: 1 },
+          { from: "Sasuke", to: "Lady", value: 33, width: 1 },
+          { from: "Sasuke", to: "Hurry", value: 20, width: 1 },
+          { from: "Sasuke", to: "Guy", value: 18, width: 1 },
+          { from: "Sasuke", to: "the", value: 18, width: 1 },
+          { from: "Sasuke", to: "Iruka", value: 18, width: 1 },
+          { from: "Sasuke", to: "Arashi", value: 18, width: 1 },
+          { from: "Sasuke", to: "Bushy", value: 17, width: 1 },
+          { from: "Sasuke", to: "Buddha\n", value: 15, width: 1 },
+          { from: "Sasuke", to: "Itachi", value: 15, width: 1 },
+          { from: "Sasuke", to: "Sensei", value: 14, width: 1 },
+          { from: "Sasuke", to: "Anbu", value: 12, width: 1 },
+          { from: "Sasuke", to: "Konohamaru", value: 11, width: 1 },
+          { from: "Sasuke", to: "Clan", value: 10, width: 1 },
+          { from: "Sasuke", to: "Demon", value: 9, width: 1 },
+          { from: "Sasuke", to: "Kekkei", value: 9, width: 1 },
+          { from: "Sasuke", to: "Curse", value: 8, width: 1 },
+          { from: "Sasuke", to: "Genjutsu", value: 8, width: 1 },
+          { from: "Sasuke", to: "Shikamaru", value: 8, width: 1 },
+          { from: "Sasuke", to: "Chunin", value: 7, width: 1 },
+          { from: "Sasuke", to: "Mark\n", value: 7, width: 1 },
+          { from: "Sasuke", to: "Kankuro", value: 7, width: 1 },
+          { from: "Sasuke", to: "Haku", value: 7, width: 1 },
+          { from: "Sasuke", to: "Shinobi", value: 7, width: 1 },
+          { from: "Sasuke", to: "Exam", value: 7, width: 1 },
+          { from: "Sasuke", to: "Yoroi", value: 6, width: 1 },
+          { from: "Sasuke", to: "n\u2019t", value: 6, width: 1 },
+          { from: "Sasuke", to: "Jiraiya", value: 6, width: 1 },
+          { from: "Sasuke", to: "Elder", value: 6, width: 1 },
+          { from: "Sasuke", to: "Ninjutsu", value: 5, width: 1 },
+          { from: "Sasuke", to: "Hooray", value: 5, width: 1 },
+          { from: "Sasuke", to: "Chakra", value: 5, width: 1 },
+          { from: "Sasuke", to: "Hokage", value: 5, width: 1 },
+          { from: "Kakashi", to: "Guy", value: 22, width: 1 },
+          { from: "Kakashi", to: "Lee", value: 21, width: 1 },
+          { from: "Kakashi", to: "Gaara", value: 19, width: 1 },
+          { from: "Kakashi", to: "Naruto", value: 18, width: 1 },
+          { from: "Kakashi", to: "Jutsu", value: 17, width: 1 },
+          { from: "Kakashi", to: "Lady", value: 16, width: 1 },
+          { from: "Kakashi", to: "Demon", value: 10, width: 1 },
+          { from: "Kakashi", to: "Iruka", value: 9, width: 1 },
+          { from: "Kakashi", to: "Anbu", value: 9, width: 1 },
+          { from: "Kakashi", to: "Asuma", value: 8, width: 1 },
+          { from: "Kakashi", to: "the", value: 8, width: 1 },
+          { from: "Kakashi", to: "Curse", value: 7, width: 1 },
+          { from: "Kakashi", to: "Sealing", value: 7, width: 1 },
+          { from: "Kakashi", to: "Bushy", value: 7, width: 1 },
+          { from: "Kakashi", to: "Kekkei", value: 6, width: 1 },
+          { from: "Kakashi", to: "Buckteeth", value: 6, width: 1 },
+          { from: "Kakashi", to: "Hurry", value: 5, width: 1 },
+          { from: "Kakashi", to: "Shinobi", value: 5, width: 1 },
+          { from: "Guy", to: "Lee", value: 93, width: 1 },
+          { from: "Guy", to: "Bushy", value: 17, width: 1 },
+          { from: "Guy", to: "Mist", value: 10, width: 1 },
+          { from: "Guy", to: "Jutsu", value: 9, width: 1 },
+          { from: "Guy", to: "Sensei", value: 7, width: 1 },
+          { from: "Guy", to: "Rock", value: 7, width: 1 },
+          { from: "Guy", to: "Karashi", value: 7, width: 1 },
+          { from: "Guy", to: "Tenten", value: 6, width: 1 },
+          { from: "Guy", to: "Kurenai", value: 5, width: 1 },
+          { from: "Guy", to: "Gaara", value: 5, width: 1 },
+          { from: "Guy", to: "Hurry", value: 5, width: 1 },
+          { from: "Guy", to: "Kurosuki", value: 5, width: 1 },
+          { from: "Guy", to: "Lady", value: 5, width: 1 },
+          { from: "Lee", to: "Gaara", value: 69, width: 1 },
+          { from: "Lee", to: "Bushy", value: 31, width: 1 },
+          { from: "Lee", to: "Tenten", value: 18, width: 1 },
+          { from: "Lee", to: "Karashi", value: 17, width: 1 },
+          { from: "Lee", to: "Lady", value: 17, width: 1 },
+          { from: "Lee", to: "Naruto", value: 13, width: 1 },
+          { from: "Lee", to: "Hurry", value: 13, width: 1 },
+          { from: "Lee", to: "Grandma", value: 12, width: 1 },
+          { from: "Lee", to: "Lee\u2019s", value: 10, width: 1 },
+          { from: "Lee", to: "Jutsu", value: 10, width: 1 },
+          { from: "Lee", to: "Genjutsu", value: 9, width: 1 },
+          { from: "Lee", to: "Rock", value: 8, width: 1 },
+          { from: "Lee", to: "Choji", value: 8, width: 1 },
+          { from: "Lee", to: "Sensei", value: 8, width: 1 },
+          { from: "Lee", to: "Dojo", value: 7, width: 1 },
+          { from: "Lee", to: "Primary", value: 7, width: 1 },
+          { from: "Lee", to: "Chakra", value: 6, width: 1 },
+          { from: "Lee", to: "Kurosuki", value: 5, width: 1 },
+          { from: "Gaara", to: "Kankuro", value: 34, width: 1 },
+          { from: "Gaara", to: "Sand", value: 18, width: 1 },
+          { from: "Gaara", to: "Naruto", value: 15, width: 1 },
+          { from: "Gaara", to: "Hurry", value: 12, width: 1 },
+          { from: "Gaara", to: "Rock", value: 11, width: 1 },
+          { from: "Gaara", to: "Jutsu", value: 9, width: 1 },
+          { from: "Gaara", to: "Desert", value: 7, width: 1 },
+          { from: "Gaara", to: "Chakra", value: 7, width: 1 },
+          { from: "Gaara", to: "Sensei", value: 6, width: 1 },
+          { from: "Gaara", to: "Bushy", value: 5, width: 1 },
+          { from: "Naruto", to: "Lady", value: 23, width: 1 },
+          { from: "Naruto", to: "Konohamaru", value: 13, width: 1 },
+          { from: "Naruto", to: "Hokage", value: 12, width: 1 },
+          { from: "Naruto", to: "Iruka", value: 12, width: 1 },
+          { from: "Naruto", to: "Jutsu", value: 9, width: 1 },
+          { from: "Naruto", to: "Grandma", value: 8, width: 1 },
+          { from: "Naruto", to: "Choji", value: 5, width: 1 },
+          { from: "Naruto", to: "Akio", value: 5, width: 1 },
+          { from: "Jutsu", to: "Rasengan", value: 11, width: 1 },
+          { from: "Jutsu", to: "Iruka", value: 9, width: 1 },
+          { from: "Jutsu", to: "Kekkei", value: 8, width: 1 },
+          { from: "Jutsu", to: "Lady", value: 7, width: 1 },
+          { from: "Jutsu", to: "Mizuki", value: 6, width: 1 },
+          { from: "Jutsu", to: "Fox", value: 6, width: 1 },
+          { from: "Jutsu", to: "Genjutsu", value: 5, width: 1 },
+          { from: "Iruka", to: "Mizuki", value: 44, width: 1 },
+          { from: "Iruka", to: "Lady", value: 11, width: 1 },
+          { from: "Iruka", to: "Ton", value: 9, width: 1 },
+          { from: "Iruka", to: "Konohamaru", value: 8, width: 1 },
+          { from: "Iruka", to: "Sensei", value: 6, width: 1 },
+          { from: "Iruka", to: "Choji", value: 5, width: 1 },
+          { from: "Iruka", to: "Hokage", value: 5, width: 1 },
+          { from: "Mizuki", to: "Lady", value: 17, width: 1 },
+          { from: "Mizuki", to: "Tsubaki", value: 12, width: 1 },
+          { from: "Mizuki", to: "Choji", value: 6, width: 1 },
+          { from: "Mizuki", to: "Sensei", value: 6, width: 1 },
+          { from: "Mizuki", to: "Shizune", value: 5, width: 1 },
+          { from: "Mizuki", to: "Asuma", value: 5, width: 1 },
+          { from: "Choji", to: "Lady", value: 18, width: 1 },
+          { from: "Choji", to: "Shikamaru", value: 10, width: 1 },
+          { from: "Choji", to: "Hurry", value: 9, width: 1 },
+          { from: "Choji", to: "Buddha\n", value: 8, width: 1 },
+          { from: "Choji", to: "Hinata", value: 7, width: 1 },
+          { from: "Choji", to: "Shino", value: 6, width: 1 },
+          { from: "Choji", to: "Yurinoshin", value: 6, width: 1 },
+          { from: "Choji", to: "Genno", value: 5, width: 1 },
+          { from: "Lady", to: "Tsunade", value: 23, width: 1 },
+          { from: "Lady", to: "Konohamaru", value: 17, width: 1 },
+          { from: "Lady", to: "Grandma", value: 11, width: 1 },
+          { from: "Lady", to: "Akahoshi", value: 11, width: 1 },
+          { from: "Lady", to: "Hurry", value: 9, width: 1 },
+          { from: "Lady", to: "Shizune", value: 9, width: 1 },
+          { from: "Lady", to: "Jiraiya", value: 8, width: 1 },
+          { from: "Lady", to: "Bushy", value: 8, width: 1 },
+          { from: "Lady", to: "Owashi", value: 7, width: 1 },
+          { from: "Lady", to: "Chishima", value: 6, width: 1 },
+          { from: "Lady", to: "Kikusuke", value: 6, width: 1 },
+          { from: "Lady", to: "Genno", value: 5, width: 1 },
+          { from: "Lady", to: "Hokage", value: 5, width: 1 },
+          { from: "Bushy", to: "Grandma", value: 8, width: 1 },
+          { from: "Action", to: "Chen", value: 26, width: 1 },
+          { from: "Action", to: "Peking", value: 26, width: 1 },
+          { from: "Chen", to: "Peking", value: 26, width: 1 },
+          { from: "Heart", to: "Lucky", value: 26, width: 1 },
+          { from: "Grandma", to: "Karashi", value: 24, width: 1 },
+          { from: "Grandma", to: "Kunihisa", value: 15, width: 1 },
+          { from: "Karashi", to: "Kurosuki", value: 8, width: 1 },
+          { from: "Karashi", to: "Raiga", value: 5, width: 1 },
+          { from: "Tsunade", to: "Dan", value: 8, width: 1 },
+          { from: "Hurry", to: "Kunihisa", value: 5, width: 1 },
+          { from: "the", to: "Kurenai", value: 7, width: 1 },
+          { from: "the", to: "Arashi", value: 6, width: 1 },
+          { from: "Arashi", to: "Jiraiya", value: 11, width: 1 },
+          { from: "Arashi", to: "Jigumo", value: 9, width: 1 },
+          { from: "Konohamaru", to: "Hokage", value: 7, width: 1 },
+          { from: "Konohamaru", to: "Grandpa", value: 6, width: 1 },
+          { from: "Genjutsu", to: "Kurenai", value: 14, width: 1 },
+          { from: "Kurenai", to: "Asuma", value: 8, width: 1 },
+          { from: "Kurenai", to: "Sensei", value: 8, width: 1 },
+          { from: "Kurenai", to: "Shino", value: 5, width: 1 },
+          { from: "Kurenai", to: "Man", value: 5, width: 1 },
+          { from: "Hiashi", to: "Hizashi", value: 13, width: 1 },
+          { from: "Hiashi", to: "Hinata", value: 12, width: 1 },
+          { from: "Hiashi", to: "Byakugan", value: 8, width: 1 },
+          { from: "Hizashi", to: "Hinata", value: 8, width: 1 },
+          { from: "Tyson", to: "Yoga", value: 13, width: 1 },
+          { from: "Hinata", to: "Byakugan", value: 5, width: 1 },
+          { from: "Hinata", to: "Miss", value: 5, width: 1 },
+          { from: "Akahoshi", to: "Sumaru", value: 9, width: 1 },
+          { from: "Mist", to: "Kisame", value: 9, width: 1 },
+          { from: "Gosunkugi", to: "Sazanami", value: 10, width: 1 },
+          { from: "Genno", to: "Man", value: 9, width: 1 },
+          { from: "Sumaru", to: "Lord", value: 5, width: 1 },
+          { from: "Jin", to: "Tora", value: 9, width: 1 },
+          { from: "Kikusuke", to: "Yurinoshin", value: 9, width: 1 },
+          { from: "Kikusuke", to: "Shun", value: 5, width: 1 },
+          { from: "Kekkei", to: "Byakugan", value: 6, width: 1 },
+          { from: "Mind", to: "Ninja", value: 8, width: 1 },
+          { from: "Owashi", to: "Moso", value: 5, width: 1 },
+          { from: "Ding", to: "Ding-dong", value: 6, width: 1 },
+          { from: "Moso", to: "Komei", value: 5, width: 1 },
+        ]);
+
+        nodeColors = {};
+        allNodes = nodes.get({ returnType: "Object" });
+        for (nodeId in allNodes) {
+          nodeColors[nodeId] = allNodes[nodeId].color;
+        }
+        allEdges = edges.get({ returnType: "Object" });
+        // adding nodes and edges to the graph
+        data = { nodes: nodes, edges: edges };
+
+        var options = {
+          configure: {
+            enabled: false,
+          },
+          edges: {
+            color: {
+              inherit: true,
+            },
+            smooth: {
+              enabled: true,
+              type: "dynamic",
+            },
+          },
+          interaction: {
+            dragNodes: true,
+            hideEdgesOnDrag: false,
+            hideNodesOnDrag: false,
+          },
+          physics: {
+            enabled: true,
+            stabilization: {
+              enabled: true,
+              fit: true,
+              iterations: 1000,
+              onlyDynamicEdges: false,
+              updateInterval: 50,
+            },
+          },
+        };
+
+        network = new vis.Network(container, data, options);
+
+        network.on("stabilizationProgress", function (params) {
+          document.getElementById("loadingBar").removeAttribute("style");
+          var maxWidth = 496;
+          var minWidth = 20;
+          var widthFactor = params.iterations / params.total;
+          var width = Math.max(minWidth, maxWidth * widthFactor);
+          document.getElementById("bar").style.width = width + "px";
+          document.getElementById("text").innerHTML = Math.round(widthFactor * 100) + "%";
+        });
+        network.once("stabilizationIterationsDone", function () {
+          document.getElementById("text").innerHTML = "100%";
+          document.getElementById("bar").style.width = "496px";
+          document.getElementById("loadingBar").style.opacity = 0;
+          // really clean the dom element
+          setTimeout(function () {
+            document.getElementById("loadingBar").style.display = "none";
+          }, 500);
+        });
+
+        return network;
+      }
+      drawGraph();
+    </script>
+  </body>
+</html>
